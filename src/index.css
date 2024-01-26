@@ -1,0 +1,8 @@
+@tailwind base;
+@layer base {
+  body {
+    @apply font-sanspro;
+  }
+}
+@tailwind components;
+@tailwind utilities;
