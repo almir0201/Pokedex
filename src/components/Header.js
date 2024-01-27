@@ -19,6 +19,7 @@ export const Header = () => {
     setOpen((prev) => !prev);
     console.log(open);
   };
+
   return (
     <nav className="bg-third relative z-10">
       <div className="container">
@@ -28,12 +29,12 @@ export const Header = () => {
             open ? 'md:flex-row justify-center md:justify-between' : 'flex-row justify-between pb-4'
           }`}>
           <img src="/assets/pokemonLogo.png" alt="pokemonLogo" />
+
           {open === true ? null : (
             <button
               type="button"
               onClick={handleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-black md:hidden ml-auto">
-              <span className="sr-only">Open main menu</span>
+              className="inline-flex items-center justify-center p-5 rounded-md text-black md:hidden ml-auto">
               <FaBars />
             </button>
           )}
@@ -43,6 +44,7 @@ export const Header = () => {
                 ? 'absolute md:relative top-[100%] left-0 pb-4 !flex md:flex-row flex-col w-full md:w-auto'
                 : 'sm:flex items-center gap-4 hidden'
             }`}>
+
             <Link href="/">
               <Paragraph variant="xl" font="font-karla" className="mt-4">
                 Home
