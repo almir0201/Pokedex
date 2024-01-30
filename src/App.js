@@ -24,10 +24,10 @@ function App() {
           <Cardprop value="888">Attack</Cardprop>
         </CardContentContainer>
 
-      <CardContentContainer>
-        <span>Attack</span>
-        <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
-      </CardContentContainer>
+        <CardContentContainer>
+          <span>Attack</span>
+          <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
+        </CardContentContainer>
       </div>
     </div>
   );
