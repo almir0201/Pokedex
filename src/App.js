@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
+import { Progressbar } from './components/ui/Progressbar';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
+        <Progressbar progressPercentage={80} />
       </div>
     </div>
   );
