@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
+import { Ratiowrapper } from './components/ui/Ratiowrapper';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
+        <Ratiowrapper>
+          <img src="/assets/charizard.png" alt="charizard" />
+        </Ratiowrapper>
       </div>
     </div>
   );
