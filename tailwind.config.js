@@ -6,7 +6,7 @@ module.exports = {
       sm: '640px',
       // => @media (min-width: 640px) { ... }
 
-      md: '640px',
+      md: '768px',
       // => @media (min-width: 768px) { ... }
 
       lg: '1024px',
@@ -56,9 +56,8 @@ module.exports = {
         lg: '4px 4px 24px -24px rgba(1, 17, 38, 0.20)'
       },
       borderRadius: {
-        large: '40px',
-        small: '11px',
-        bottomRadius: '0 0 16px 16px'
+        xxl: '40px',
+        'header-item-bottom': '0 0 16px 16px'
       },
       inset: {
         large: 'calc(50% - 12px)'
