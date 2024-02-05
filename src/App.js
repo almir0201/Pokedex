@@ -23,7 +23,7 @@ function App() {
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
-        <Progressbar progressPercentage={80} />
+        <Progressbar currentValue={80} />
       </div>
     </div>
   );
