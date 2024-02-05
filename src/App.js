@@ -20,7 +20,7 @@ function App() {
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
         <div className="max-w-xs">
-          <Cardprop value="888" stat={'Attack'} />
+          <Cardprop value="888" label="Attack" />
         </div>
       </div>
     </div>
