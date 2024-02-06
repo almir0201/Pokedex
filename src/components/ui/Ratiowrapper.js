@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Ratiowrapper = ({ children, currentValue }) => {
+export const Ratiowrapper = ({ children, padding }) => {
   return (
-    <div style={{ paddingBottom: `${currentValue}%` }} className="w-full h-0">
+    <div style={{ paddingBottom: `${padding}%` }} className="w-full h-0">
       {children}
     </div>
   );
