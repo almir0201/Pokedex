@@ -6,8 +6,11 @@ import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
 import { CardContentContainer } from './components/ui/CardContentContainer';
+import { Types } from './components/ui/Types';
 
 function App() {
+  const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Fairy', 'Glass', 'Lorem']
+
   return (
     <div className="App">
       <Header />
@@ -28,6 +31,8 @@ function App() {
           <span>Attack</span>
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
         </CardContentContainer>
+
+        <Types data={testArr}/>
       </div>
     </div>
   );
