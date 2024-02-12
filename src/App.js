@@ -7,6 +7,7 @@ import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
+import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <span>Attack</span>
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
         </CardContentContainer>
+        <ProgressWithDescription statName="Attack" statValue="2342342" currentValue={80} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 export const Paragraph = ({ className, children, variant, font }) => {
-  let UIstyle = 'text-base font-normal text-black leading-normal';
+  let UIstyle = 'text-base font-normal text-black ';
   let fontFamily = font ?? 'font-roboto';
   if (variant === 'xl') {
     UIstyle += ' text-xl hover:underline underline-offset-[15px]';
@@ -10,8 +10,8 @@ export const Paragraph = ({ className, children, variant, font }) => {
   if (variant === 'lg') {
     UIstyle += ' text-l text-dark';
   }
-  if (variant === 'aaa') {
-    UIstyle += ' text-s text-dark';
+  if (variant === 'md') {
+    UIstyle += ' text-md';
   }
   if (variant === 'bbb') {
     UIstyle += ' text-xs text-dark';
