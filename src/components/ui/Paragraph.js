@@ -13,9 +13,6 @@ export const Paragraph = ({ className, children, variant, font }) => {
   if (variant === 'md') {
     UIstyle += ' text-md';
   }
-  if (variant === 'bbb') {
-    UIstyle += ' text-xs text-dark';
-  }
   UIstyle += ` ${fontFamily} ${className}`;
   return <p className={UIstyle}>{children}</p>;
 };

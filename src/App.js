@@ -30,7 +30,7 @@ function App() {
           <span>Attack</span>
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
         </CardContentContainer>
-        <ProgressWithDescription statName="Attack" statValue="2342342" currentValue={80} />
+        <ProgressWithDescription title="Attack" label="2342342" value={80} />
       </div>
     </div>
   );
