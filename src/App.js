@@ -7,6 +7,7 @@ import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
+import { Vertical } from './components/ui/Vertical';
 
 function App() {
   return (
