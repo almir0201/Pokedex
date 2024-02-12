@@ -5,10 +5,7 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
-<<<<<<< HEAD
-=======
 import { Progressbar } from './components/ui/Progressbar';
->>>>>>> main
 import { CardContentContainer } from './components/ui/CardContentContainer';
 
 function App() {
@@ -25,15 +22,9 @@ function App() {
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
         <CardContentContainer>
-<<<<<<< HEAD
-          <Cardprop value="888">Attack</Cardprop>
-        </CardContentContainer>
-
-=======
           <Cardprop value="888" label="Attack" />
         </CardContentContainer>
         <Progressbar currentValue={80} />
->>>>>>> main
         <CardContentContainer>
           <span>Attack</span>
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
