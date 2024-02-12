@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { HeaderItem } from './ui/HeaderItem';
-import logo from '../images/pokemonLogo.png';
+import { Link } from 'react-router-dom';
+import { Paragraph } from './ui/Paragraph';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -13,52 +13,59 @@ export const Header = () => {
       setOpen(false);
     }
   };
+  document.addEventListener('mousedown', closeOpenMenu);
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
+    console.log(open);
   };
-
-  document.addEventListener('mousedown', closeOpenMenu);
-
   return (
-    <>
-      {open && <div className="fixed top-0 left-0 w-screen h-screen bg-dark bg-opacity-90"></div>}
-      <nav className="bg-third relative z-10">
-        <div className="container">
+    <nav className="bg-third relative z-10">
+      <div className="container">
+        <div
+          ref={closeMenu}
+          className={`flex pt-3 md:pb-4 ${
+            open ? 'md:flex-row justify-center md:justify-between' : 'flex-row justify-between pb-4'
+          }`}>
+          <img src="/assets/pokemonLogo.png" alt="pokemonLogo" />
+          {open === true ? null : (
+            <button
+              type="button"
+              onClick={handleMenu}
+              className="inline-flex items-center justify-center p-2 rounded-md text-black md:hidden ml-auto">
+              <span className="sr-only">Open main menu</span>
+              <FaBars />
+            </button>
+          )}
           <div
-            ref={closeMenu}
-            className={`flex pt-3 md:pb-4 ${
+            className={`bg-third text-center ${
               open
-                ? 'pt-9 justify-center md:flex-row md:pt-3 md:justify-between'
-                : 'flex-row justify-between pb-4'
+                ? 'absolute md:relative top-[100%] left-0 pb-4 !flex md:flex-row flex-col w-full md:w-auto'
+                : 'sm:flex items-center gap-4 hidden'
             }`}>
-            <img src={logo} alt="Logo" />
-            {open ? (
-              ''
-            ) : (
-              <button
-                type="button"
-                onClick={() => {
-                  handleMenu();
-                }}
-                className="inline-flex items-center justify-center p-2 rounded-md text-black md:hidden ml-auto">
-                <FaBars size={30} />
-              </button>
-            )}
-            <div
-              className={`bg-third shadow-lg text-center rounded-header-item-bottom ${
-                open
-                  ? 'absolute flex flex-col w-full left-0 pt-9 pb-11 top-[100%] gap-4 bg-gradient-to-b from-third to-primary md:relative md:pt-0 md:pb-4 md:flex-row md:gap-8 md:w-auto md:bg-none lg:gap-16'
-                  : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
-              }`}>
-              <HeaderItem>Home</HeaderItem>
-              <HeaderItem>Pokedex</HeaderItem>
-              <HeaderItem>Legendaries</HeaderItem>
-              <HeaderItem>Documentation</HeaderItem>
-            </div>
+            <Link href="/">
+              <Paragraph variant="xl" font="font-karla" className="mt-4">
+                Home
+              </Paragraph>
+            </Link>
+            <Link href="/">
+              <Paragraph variant="xl" font="font-karla" className="mt-4">
+                Pokedex
+              </Paragraph>
+            </Link>
+            <Link href="/">
+              <Paragraph variant="xl" font="font-karla" className="mt-4">
+                Legendaries
+              </Paragraph>
+            </Link>
+            <Link href="/">
+              <Paragraph variant="xl" font="font-karla" className="mt-4">
+                Documentation
+              </Paragraph>
+            </Link>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
