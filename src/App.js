@@ -7,6 +7,7 @@ import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
+import { FilterStat } from './components/ui/FilterStat';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
         <CardContentContainer>
           <span>Attack</span>
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
+        </CardContentContainer>
+
+        <CardContentContainer>
+          <FilterStat />
         </CardContentContainer>
       </div>
     </div>
