@@ -3,7 +3,7 @@ import { forwardRef } from 'react';
 
 export const Input = forwardRef(({ variant, className, ...props }, ref) => {
   let UIstyle =
-    'text-base font-normal px-5 py-2 w-full text-dark placeholder-dark rounded-xxl bg-gray ';
+    'text-base font-normal px-5 py-2 w-full text-dark placeholder-dark rounded-large bg-gray ';
   if (variant === 'big') {
     UIstyle += 'py-4';
   }
