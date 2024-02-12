@@ -24,9 +24,14 @@ function App() {
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
+<<<<<<< HEAD
+        <div className="max-w-xs">
+          <Cardprop value="888" label="Attack" />
+=======
         <CardContentContainer>
           <Cardprop value="888">Attack</Cardprop>
 <<<<<<< HEAD
+>>>>>>> main
         </div>
         <Progressbar currentValue={80} />
 =======
