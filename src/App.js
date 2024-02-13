@@ -14,19 +14,11 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        {/* <div className="grid grid-cols-12"> */}
-        <div className="h-80">
-          <VerticalLayout>
-            <Input
-              className="mb-2 col-span-4"
-              placeholder="Encuentra tu pokémon..."
-              variant="big"
-            />
-            <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
-            <Checkbox className="col-span-4" label="Electric" />
-          </VerticalLayout>
+        <div className="grid grid-cols-12">
+          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
+          <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
+          <Checkbox className="col-span-4" label="Electric" />
         </div>
-        {/* </div> */}
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
