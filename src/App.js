@@ -8,6 +8,7 @@ import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
+import { Dropdown } from './components/ui/Dropdown';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
+        <Dropdown label="adsgasd" />
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
