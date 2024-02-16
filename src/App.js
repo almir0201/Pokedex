@@ -23,7 +23,7 @@ function App() {
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
-        <Ratiowrapper padding={87.44}>
+        <Ratiowrapper variant="1/1">
           <img src="/assets/charizard.png" alt="charizard" />
         </Ratiowrapper>
       </div>
