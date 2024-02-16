@@ -1,4 +1,5 @@
 import './index.css';
+import React, { useState } from 'react';
 import { Input } from './components/ui/Input';
 import { Checkbox } from './components/ui/Checkbox';
 import { Header } from './components/Header';
@@ -8,9 +9,20 @@ import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
-import { Dropdown } from './components/ui/Dropdown';
+import { Dropdown, Content, Item, Trigger, Menu } from './components/ui/Dropdown';
+import { Paragraph } from './components/ui/Paragraph';
+import arrowfilter from './icons/ArrowFilter.svg';
 
 function App() {
+  const options = ['Fire', 'Normal', 'Electric', 'Water'];
+
+  const [checked, setChecked] = useState(new Array(options.length).fill(false));
+
+  const handleCheckbox = (position) => {
+    const updatedChecked = checked.map((item, index) => (index === position ? !item : item));
+    setChecked(updatedChecked);
+  };
+
   return (
     <div className="App">
       <Header />
@@ -20,7 +32,27 @@ function App() {
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
-        <Dropdown label="adsgasd" />
+        <Dropdown title="adsgasd"></Dropdown>
+        <Menu>
+          <Trigger>
+            <Paragraph className="flex-1" variant="md" font="font-sanspro">
+              Type
+            </Paragraph>
+            <img className="mr-2" src={arrowfilter} alt="" />
+          </Trigger>
+          <Content>
+            {options.map((item, index) => (
+              <Item key={index}>
+                <Checkbox
+                  className="col-span-4 mb-2 pl-7 leading-4"
+                  label={item}
+                  checked={checked[index]}
+                  onChange={() => handleCheckbox(index)}
+                />
+              </Item>
+            ))}
+          </Content>
+        </Menu>
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
