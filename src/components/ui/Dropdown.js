@@ -10,20 +10,18 @@ import {
 export const Trigger = ({ children }) => {
   return (
     <DropdownMenuTrigger className="w-xxl">
-      <div className="bg-lightgray rounded shadow-md">
-        <div className="flex justify-center">{children}</div>
-      </div>
+      <div className="flex justify-center bg-lightgray rounded shadow-md">{children}</div>
     </DropdownMenuTrigger>
   );
 };
 
-export const Menu = ({ children }) => {
+export const Dropdown = ({ children }) => {
   return <DropdownMenu>{children}</DropdownMenu>;
 };
 
 export const Content = ({ children }) => {
   return (
-    <DropdownMenuContent className="bg-lightgray pt-3 pb-1 mt-1 rounded-lg z-50 shadow-xl">
+    <DropdownMenuContent className="bg-lightgray w-xxl pt-3 pb-1 mt-1 rounded-lg z-50 shadow-xl">
       {children}
     </DropdownMenuContent>
   );
@@ -39,5 +37,3 @@ export const Item = ({ children }) => {
     </DropdownMenuItem>
   );
 };
-
-export const Dropdown = () => {};

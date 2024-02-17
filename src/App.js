@@ -9,7 +9,7 @@ import { Cardprop } from './components/ui/Cardprop';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
-import { Dropdown, Content, Item, Trigger, Menu } from './components/ui/Dropdown';
+import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import arrowfilter from './icons/ArrowFilter.svg';
 
@@ -32,8 +32,7 @@ function App() {
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
-        <Dropdown title="adsgasd"></Dropdown>
-        <Menu>
+        <Dropdown>
           <Trigger>
             <Paragraph className="flex-1" variant="md" font="font-sanspro">
               Type
@@ -52,7 +51,7 @@ function App() {
               </Item>
             ))}
           </Content>
-        </Menu>
+        </Dropdown>
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>

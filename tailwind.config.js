@@ -31,7 +31,6 @@ module.exports = {
     },
     extend: {
       width: {
-        lg: '30px',
         xxl: '135px'
       },
       height: {

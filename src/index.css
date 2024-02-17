@@ -6,7 +6,3 @@
 }
 @tailwind components;
 @tailwind utilities;
-
-[data-radix-popper-content-wrapper] {
-  width: 135px;
-}
