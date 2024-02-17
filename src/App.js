@@ -11,7 +11,6 @@ import { CardContentContainer } from './components/ui/CardContentContainer';
 import { VerticalLayout } from './components/ui/VerticalLayout';
 =======
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
->>>>>>> main
 
 function App() {
   return (
