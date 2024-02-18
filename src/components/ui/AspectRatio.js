@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const Ratiowrapper = ({ children, variant }) => {
-  let UIstyle = 'w-full h-full relative overflow-hidden [&>]:absolute [&>]:left-0 ';
+export const AspectRatio = ({ children, variant }) => {
+  let UIstyle = 'relative overflow-hidden [&>*]:absolute [&>*]:left-0 [&>*]:w-full [&>*]:h-full';
 
   if (variant === '1/1') {
     UIstyle += 'pb-[100%]';

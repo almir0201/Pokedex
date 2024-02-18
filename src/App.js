@@ -5,7 +5,7 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
-import { Ratiowrapper } from './components/ui/Ratiowrapper';
+import { AspecRatio } from './components/ui/AspecRatio';
 
 function App() {
   return (
@@ -23,9 +23,9 @@ function App() {
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
-        <Ratiowrapper variant="1/1">
+        <AspecRatio variant="1/1">
           <img src="/assets/charizard.png" alt="charizard" />
-        </Ratiowrapper>
+        </AspecRatio>
       </div>
     </div>
   );
