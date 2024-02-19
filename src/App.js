@@ -9,7 +9,7 @@ import { CardContentContainer } from './components/ui/CardContentContainer';
 import { Types } from './components/ui/Types';
 
 function App() {
-  const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Fairy', 'Glass', 'Lorem']
+  const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
 
   return (
     <div className="App">
@@ -32,7 +32,7 @@ function App() {
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
         </CardContentContainer>
 
-        <Types data={testArr}/>
+        <Types data={testArr} />
       </div>
     </div>
   );
