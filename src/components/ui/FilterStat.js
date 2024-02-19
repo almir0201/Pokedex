@@ -1,19 +1,22 @@
 import { Input } from './Input';
+import { Spacer } from './Spacer';
 
 export const FilterStat = () => {
   return (
-    <div className="flex justify-between items-center gap-4">
-      <div className="w-full">
-        <label className="pl-4 mb-1">From</label>
-        <Input className="bg-stone-300" placeholder="70 000" />
-      </div>
-
-      <p className="text-xl border w-full max-w-[25px] mt-6" />
-
-      <div className="w-full">
-        <label className="pl-4 mb-1">To</label>
-        <Input className="bg-stone-300" placeholder="50 000" />
-      </div>
+    <div className="md:flex justify-between items-center gap-4">
+      <Input
+        placeholder="70 000"
+        variant="sm"
+        label="From"
+        labelClassName="pl-4 mb-1 text-xs font-roboto"
+      />
+      <Spacer />
+      <Input
+        placeholder="50 000"
+        variant="sm"
+        label="To"
+        labelClassName="pl-4 mb-1 text-xs font-roboto"
+      />
     </div>
   );
 };

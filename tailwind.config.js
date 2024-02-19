@@ -53,11 +53,15 @@ module.exports = {
       },
       boxShadow: {
         sm: '0px -2px 0px 0px rgba(0, 0, 0, 0.18) inset',
+        md: '2px 2px 2px 0px #2121211A',
         lg: '4px 4px 24px -24px rgba(1, 17, 38, 0.20)'
       },
       borderRadius: {
         xxl: '40px',
         'header-item-bottom': '0 0 16px 16px'
+      },
+      borderWidth: {
+        3: '3px'
       },
       inset: {
         large: 'calc(50% - 12px)'
