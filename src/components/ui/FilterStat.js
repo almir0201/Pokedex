@@ -1,4 +1,4 @@
-import { Input } from './Input'
+import { Input } from './Input';
 
 export const FilterStat = () => {
   return (
@@ -15,5 +15,5 @@ export const FilterStat = () => {
         <Input className="bg-stone-300" placeholder="50 000" />
       </div>
     </div>
-  )
-}
+  );
+};
