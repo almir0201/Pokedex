@@ -1,5 +1,4 @@
 import { Input } from './Input';
-import { Spacer } from './Spacer';
 
 export const FilterStat = () => {
   return (
@@ -10,7 +9,9 @@ export const FilterStat = () => {
         label="From"
         labelClassName="pl-4 mb-1 text-xs font-roboto"
       />
-      <Spacer />
+
+      <p className="hidden md:block border-b-2 mt-6 w-6" />
+
       <Input
         placeholder="50 000"
         variant="sm"
