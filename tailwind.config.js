@@ -2,6 +2,22 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    screens: {
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px'
+      // => @media (min-width: 1536px) { ... }
+    },
     container: {
       width: '100%',
       center: true
@@ -9,6 +25,7 @@ module.exports = {
     fontSize: {
       xs: '12px',
       sm: '14px',
+      md: '16px',
       lg: '23px',
       xl: '25px'
     },
@@ -36,11 +53,12 @@ module.exports = {
         roboto: 'Roboto'
       },
       boxShadow: {
-        sm: '0px -2px 0px 0px rgba(0, 0, 0, 0.18) inset'
+        sm: '0px -2px 0px 0px rgba(0, 0, 0, 0.18) inset',
+        lg: '4px 4px 24px -24px rgba(1, 17, 38, 0.20)'
       },
       borderRadius: {
-        large: '40px',
-        small: '11px'
+        xxl: '40px',
+        'header-item-bottom': '0 0 16px 16px'
       },
       inset: {
         large: 'calc(50% - 12px)'

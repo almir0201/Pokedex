@@ -5,7 +5,13 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
+<<<<<<< HEAD
 import { AspectRatio } from './components/ui/AspectRatio';
+=======
+import { Progressbar } from './components/ui/Progressbar';
+import { CardContentContainer } from './components/ui/CardContentContainer';
+import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
+>>>>>>> main
 
 function App() {
   return (
@@ -20,10 +26,22 @@ function App() {
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
+<<<<<<< HEAD
         <div className="max-w-xs">
           <Cardprop value="888">Attack</Cardprop>
         </div>
         <AspectRatio variant="1/1"></AspectRatio>
+=======
+        <CardContentContainer>
+          <Cardprop value="888" label="Attack" />
+        </CardContentContainer>
+        <Progressbar currentValue={80} />
+        <CardContentContainer>
+          <span>Attack</span>
+          <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
+        </CardContentContainer>
+        <ProgressWithDescription title="Attack" label="2342342" value={80} />
+>>>>>>> main
       </div>
     </div>
   );
