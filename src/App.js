@@ -23,15 +23,12 @@ function App() {
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
-        <div className="max-w-xs">
-          <Cardprop value="888">Attack</Cardprop>
-        </div>
-        <AspectRatio variant="1/1">
-          <img src="/assets/charizard.png" alt="charizard" />
-        </AspectRatio>
         <CardContentContainer>
           <Cardprop value="888" label="Attack" />
         </CardContentContainer>
+        <AspectRatio variant="1/1">
+          <img src="/assets/charizard.png" alt="charizard" />
+        </AspectRatio>
         <Progressbar currentValue={80} />
         <CardContentContainer>
           <span>Attack</span>
