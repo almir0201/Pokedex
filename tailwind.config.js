@@ -44,7 +44,7 @@ module.exports = {
         danger: '#D93E30',
         gray: '#F6F7F9',
         dark: '#212121',
-        green: '#73D677',
+        success: '#73D677',
         poison: '#07D6F2',
         lightgray: '#F2F2F2',
         gold: '#F2CB07'
