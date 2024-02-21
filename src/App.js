@@ -9,6 +9,7 @@ import { Cardprop } from './components/ui/Cardprop';
 import { AspectRatio } from './components/ui/AspectRatio';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
+import { Types } from './components/ui/Types';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
 import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
@@ -18,6 +19,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 const queryClient = new QueryClient();
 
 function App() {
+  const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
   const options = ['Fire', 'Normal', 'Electric', 'Water'];
 
   const [checked, setChecked] = useState(new Array(options.length).fill(false));
@@ -75,6 +77,8 @@ function App() {
             <span>Attack</span>
             <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
           </CardContentContainer>
+
+          <Types data={testArr} />
           <ProgressWithDescription title="Attack" label="2342342" value={80} />
         </div>
       </div>
