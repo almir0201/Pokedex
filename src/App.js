@@ -12,16 +12,26 @@ import { CardContentContainer } from './components/ui/CardContentContainer';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
 import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
+import { Modal } from './components/ui/Modal';
 import arrowfilter from './icons/ArrowFilter.svg';
 
 function App() {
   const options = ['Fire', 'Normal', 'Electric', 'Water'];
 
   const [checked, setChecked] = useState(new Array(options.length).fill(false));
+  const [open, setOpen] = useState(false);
 
   const handleCheckbox = (position) => {
     const updatedChecked = checked.map((item, index) => (index === position ? !item : item));
     setChecked(updatedChecked);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
   };
 
   return (
@@ -53,6 +63,12 @@ function App() {
             ))}
           </Content>
         </Dropdown>
+        <button type="button" onClick={handleOpen}>
+          Click me!
+        </button>
+        <Modal isOpen={open} onClose={handleClose}>
+          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
+        </Modal>
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag variant="grass">Grass</Cardtag>
         <Button>Grass</Button>
