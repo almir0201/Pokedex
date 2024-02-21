@@ -13,6 +13,7 @@ import { ProgressWithDescription } from './components/ui/ProgressWithDescription
 import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import arrowfilter from './icons/ArrowFilter.svg';
+import { Grid } from './components/ui/Grid';
 
 function App() {
   const options = ['Fire', 'Normal', 'Electric', 'Water'];
@@ -33,6 +34,11 @@ function App() {
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
+        <Grid cols="3">
+          <Input placeholder="Encuentra tu pokémon..." variant="big" />
+          <Input placeholder="Encuentra tu pokémon..." variant="big" />
+          <Input placeholder="Encuentra tu pokémon..." variant="big" />
+        </Grid>
         <Dropdown>
           <Trigger>
             <Paragraph className="flex-1" variant="md" font="font-sanspro">
