@@ -97,6 +97,7 @@ function App() {
             <span>Attack</span>
             <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsum</p>
           </CardContentContainer>
+          <Types data={testArr} />
           <ProgressWithDescription title="Attack" label="2342342" value={80} />
         </div>
       </div>
