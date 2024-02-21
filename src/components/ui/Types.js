@@ -1,17 +1,12 @@
 import { Checkbox } from './Checkbox';
 
 export const Types = ({ data, className }) => {
+  if (!data.length) return null;
   return (
-    <>
-      {data.length ? (
-        <div className={className}>
-          {data.map((type) => {
-            return <Checkbox label={type} key={`${type}-checkbox`} />;
-          })}
-        </div>
-      ) : (
-        <></>
-      )}
-    </>
+    <div className={className}>
+      {data.map((type) => {
+        return <Checkbox label={type} key={`${type}-checkbox`} />;
+      })}
+    </div>
   );
 };
