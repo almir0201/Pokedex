@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { Cardtag } from './components/ui/Cardtag';
 import { Button } from './components/ui/Button';
 import { Cardprop } from './components/ui/Cardprop';
+import { AspectRatio } from './components/ui/AspectRatio';
 import { Progressbar } from './components/ui/Progressbar';
 import { CardContentContainer } from './components/ui/CardContentContainer';
 import { ProgressWithDescription } from './components/ui/ProgressWithDescription';
@@ -58,6 +59,9 @@ function App() {
         <CardContentContainer>
           <Cardprop value="888" label="Attack" />
         </CardContentContainer>
+        <AspectRatio variant="1/1">
+          <img src="/assets/charizard.png" alt="charizard" />
+        </AspectRatio>
         <Progressbar currentValue={80} />
         <CardContentContainer>
           <span>Attack</span>
