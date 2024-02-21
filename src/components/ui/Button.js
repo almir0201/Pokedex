@@ -1,7 +1,10 @@
 import { Paragraph } from './Paragraph';
 
 export const Button = ({ children, variant }) => {
-  let UIstyle = 'bg-grass rounded-xl text-center shadow-sm px-9 py-5';
+  let UIstyle = 'bg-green rounded-xl text-center shadow-xs px-9 py-5 bg-green';
+  if (variant === 'gold') {
+    UIstyle += ' !bg-gold';
+  }
 
   return (
     <button className={UIstyle} variant={variant}>
