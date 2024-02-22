@@ -27,7 +27,9 @@ module.exports = {
       sm: '14px',
       md: '16px',
       lg: '23px',
-      xl: '25px'
+      xl: '25px',
+      xxl: '44px',
+      xxxl: '62px'
     },
     extend: {
       width: {
