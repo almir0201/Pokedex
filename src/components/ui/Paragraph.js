@@ -7,7 +7,7 @@ export const Paragraph = ({ className, children, variant, font }) => {
       className={cn('text-base font-normal text-black', fontFamily, className, {
         'text-xl hover:underline underline-offset-[15px]': variant === 'xl',
         'text-sm text-dark': variant === 'xs',
-        'text-l text-dark': variant === 'lg',
+        'text-lg text-dark': variant === 'lg',
         'text-md': variant === 'md'
       })}>
       {children}
