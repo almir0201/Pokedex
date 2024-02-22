@@ -16,6 +16,7 @@ import { Paragraph } from './components/ui/Paragraph';
 import { Modal } from './components/ui/Modal';
 import arrowfilter from './icons/ArrowFilter.svg';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { CardTitle } from './components/ui/CardTitle';
 
 const queryClient = new QueryClient();
 
@@ -86,6 +87,7 @@ function App() {
           <Cardtag variant="poison">Poison</Cardtag>
           <Cardtag variant="grass">Grass</Cardtag>
           <Button>Grass</Button>
+          <CardTitle title="Mew" />
           <CardContentContainer>
             <Cardprop value="888" label="Attack" />
           </CardContentContainer>
