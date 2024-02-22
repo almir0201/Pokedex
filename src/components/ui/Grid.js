@@ -1,10 +1,11 @@
-import React, { Children, cloneElement } from 'react';
+import { Children, cloneElement } from 'react';
 
 export const Grid = ({ children, cols }) => {
+  var gridCols = 12;
   return (
-    <div className="grid grid-cols-12">
+    <div className={`grid grid-cols-${gridCols}`}>
       {Children.map(children, (child) =>
-        cloneElement(child, { className: `col-span-${cols}` }, null)
+        cloneElement(child, { className: `col-span-${gridCols / cols}` })
       )}
     </div>
   );

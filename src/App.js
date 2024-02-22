@@ -34,7 +34,7 @@ function App() {
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
-        <Grid cols="3">
+        <Grid cols="6">
           <Input placeholder="Encuentra tu pokémon..." variant="big" />
           <Input placeholder="Encuentra tu pokémon..." variant="big" />
           <Input placeholder="Encuentra tu pokémon..." variant="big" />
