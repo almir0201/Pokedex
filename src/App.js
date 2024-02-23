@@ -86,6 +86,7 @@ function App() {
           <Cardtag variant="poison">Poison</Cardtag>
           <Cardtag variant="grass">Grass</Cardtag>
           <Button>Grass</Button>
+          <Button variant="special">Gold</Button>
           <CardContentContainer>
             <Cardprop value="888" label="Attack" />
           </CardContentContainer>

@@ -1,10 +1,13 @@
 import { Paragraph } from './Paragraph';
+import { cn } from '../../lib/utils';
 
 export const Button = ({ children, variant }) => {
-  let UIstyle = 'bg-grass rounded-xl text-center shadow-sm px-9 py-5';
-
   return (
-    <button className={UIstyle} variant={variant}>
+    <button
+      className={cn('bg-success rounded-xl text-center shadow-xs px-9 py-5', {
+        'bg-gold': variant === 'special'
+      })}
+      variant={variant}>
       <Paragraph variant="lg">{children}</Paragraph>
     </button>
   );
