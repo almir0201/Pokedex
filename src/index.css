@@ -6,3 +6,23 @@
 }
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bg-goldGradient {
+    background: radial-gradient(
+      677.11% 487.95% at 102.13% -20%,
+      #b57e10 0%,
+      #b57e10 20.31%,
+      #f9df7b 39.58%,
+      #fff3a6 59.38%,
+      #f9df7b 78.13%,
+      #b57e10 100%
+    );
+  }
+  .bg-darkRedGradient {
+    background: linear-gradient(180deg, #732119 42.19%, #d93e30 100%);
+  }
+  .bg-redGradient {
+    background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
+  }
+}
