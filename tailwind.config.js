@@ -30,9 +30,6 @@ module.exports = {
       xl: '25px'
     },
     extend: {
-      padding: {
-        xl: '60px'
-      },
       width: {
         xxl: '135px'
       },
@@ -50,7 +47,7 @@ module.exports = {
         grass: '#73D677',
         poison: '#07D6F2',
         lightgray: '#F2F2F2',
-        greyGradient: '#F5F5F5'
+        graySecond: '#F5F5F5'
       },
       fontFamily: {
         sanspro: 'Source Sans Pro',
