@@ -28,8 +28,12 @@ module.exports = {
       md: '16px',
       lg: '23px',
       xl: '25px',
-      xxl: '44px',
-      xxxl: '62px'
+      '2xl': '35px',
+      '3xl': '42px',
+      '4xl': '44px',
+      '5xl': '48px',
+      '6xl': '62px',
+      '7xl': '72px'
     },
     extend: {
       width: {
