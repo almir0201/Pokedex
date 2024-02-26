@@ -1,19 +1,18 @@
-import React from 'react';
+import { cn } from '../../lib/utils';
 
 export const AspectRatio = ({ children, variant }) => {
-  let UIstyle = 'relative overflow-hidden [&>*]:absolute [&>*]:left-0 [&>*]:w-full [&>*]:h-full';
-
-  if (variant === '1/1') {
-    UIstyle += 'pb-[100%]';
-  }
-  if (variant === '16/9') {
-    UIstyle += 'pb-[56.25%]';
-  }
-  if (variant === '4/3') {
-    UIstyle += 'pb-[75%]';
-  }
-  if (variant === '3/4') {
-    UIstyle += 'pb-[133.33%]';
-  }
-  return <div className={UIstyle}>{children}</div>;
+  return (
+    <div
+      className={cn(
+        'relative overflow-hidden [&>*]:absolute [&>*]:left-0 [&>*]:w-full [&>*]:h-full',
+        {
+          'pb-[100%]': variant === '1/1',
+          'pb-[56.25%]': variant === '16/9',
+          'pb-[75%]': variant === '4/3',
+          'pb-[133.33%]': variant === '3/4'
+        }
+      )}>
+      {children}
+    </div>
+  );
 };

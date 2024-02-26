@@ -15,8 +15,13 @@ import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import { Modal } from './components/ui/Modal';
 import arrowfilter from './icons/ArrowFilter.svg';
+import { Grid } from './components/ui/Grid';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+<<<<<<< HEAD
 import { Headline } from './components/ui/Headline';
+=======
+import { CardTitle } from './components/ui/CardTitle';
+>>>>>>> main
 
 const queryClient = new QueryClient();
 
@@ -57,6 +62,11 @@ function App() {
             <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
             <Checkbox className="col-span-4" label="Electric" />
           </div>
+          <Grid cols="6">
+            <Input placeholder="Encuentra tu pokémon..." variant="big" />
+            <Input placeholder="Encuentra tu pokémon..." variant="big" />
+            <Input placeholder="Encuentra tu pokémon..." variant="big" />
+          </Grid>
           <Dropdown>
             <Trigger>
               <Paragraph className="flex-1" variant="md" font="font-sanspro">
@@ -88,8 +98,10 @@ function App() {
             />
           </Modal>
           <Cardtag variant="poison">Poison</Cardtag>
-          <Cardtag variant="grass">Grass</Cardtag>
+          <Cardtag>Grass</Cardtag>
           <Button>Grass</Button>
+          <CardTitle title="Mew" />
+          <Button variant="special">Gold</Button>
           <CardContentContainer>
             <Cardprop value="888" label="Attack" />
           </CardContentContainer>

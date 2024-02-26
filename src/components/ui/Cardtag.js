@@ -1,15 +1,13 @@
 import { Paragraph } from './Paragraph';
+import { cn } from '../../lib/utils';
 
-export const Cardtag = ({ variant, children }) => {
-  let UIstyle = 'bg-green rounded-xl text-center shadow-sm';
-  if (variant === 'grass') {
-    UIstyle += ' bg-grass rounded-xl';
-  }
-  if (variant === 'poison') {
-    UIstyle += ' bg-poison rounded-xl';
-  }
+export const Cardtag = ({ variant = 'default', children }) => {
   return (
-    <div className={UIstyle}>
+    <div
+      className={cn('rounded-xl text-center shadow-sm', {
+        'bg-poison': variant === 'poison',
+        'bg-success': variant === 'default'
+      })}>
       <Paragraph variant="xs">{children}</Paragraph>
     </div>
   );
