@@ -17,11 +17,8 @@ import { Modal } from './components/ui/Modal';
 import arrowfilter from './icons/ArrowFilter.svg';
 import { Grid } from './components/ui/Grid';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-<<<<<<< HEAD
 import { Headline } from './components/ui/Headline';
-=======
 import { CardTitle } from './components/ui/CardTitle';
->>>>>>> main
 
 const queryClient = new QueryClient();
 
