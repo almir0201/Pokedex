@@ -10,7 +10,7 @@
 @layer utilities {
   .bg-goldGradient {
     background: radial-gradient(
-      677.11% 487.95% at 102.13% -20%,
+      at 102.13% -20%,
       #b57e10 0%,
       #b57e10 20.31%,
       #f9df7b 39.58%,
