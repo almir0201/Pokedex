@@ -46,7 +46,7 @@ function App() {
         <Header />
         <div className="container">
           <div className="bg-black">
-            <Headline label="Legendaries" />
+            <Headline children="Legendaries" type="h3" />
           </div>
           <div className="grid grid-cols-12">
             <Input
