@@ -90,7 +90,7 @@ function App() {
             />
           </Modal>
           <Cardtag variant="poison">Poison</Cardtag>
-          <Cardtag variant="grass">Grass</Cardtag>
+          <Cardtag>Grass</Cardtag>
           <Button>Grass</Button>
           <Button variant="special">Gold</Button>
           <CardContentContainer>
