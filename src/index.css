@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .bg-goldGradient {
+  .gold-gradient {
     background: radial-gradient(
       at 102.13% -20%,
       #b57e10 0%,
@@ -19,10 +19,10 @@
       #b57e10 100%
     );
   }
-  .bg-darkRedGradient {
+  .dark-red-radient {
     background: linear-gradient(180deg, #732119 42.19%, #d93e30 100%);
   }
-  .bg-redGradient {
+  .red-gradient {
     background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
   }
 }
