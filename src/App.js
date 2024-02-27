@@ -14,11 +14,13 @@ import { ProgressWithDescription } from './components/ui/ProgressWithDescription
 import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import { Modal } from './components/ui/Modal';
-import arrowfilter from './icons/ArrowFilter.svg';
+import arrowfilter from './icons/arrowFilter.svg';
 import { Grid } from './components/ui/Grid';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Headline } from './components/ui/Headline';
 import { CardTitle } from './components/ui/CardTitle';
+import { SpecialCard } from './components/ui/SpecialCard';
+import pokemonImage from './images/pokemonImage.png';
 
 const queryClient = new QueryClient();
 
@@ -97,6 +99,7 @@ function App() {
           <Cardtag variant="poison">Poison</Cardtag>
           <Cardtag>Grass</Cardtag>
           <Button>Grass</Button>
+          <SpecialCard title="Meeew" children={pokemonImage} />
           <CardTitle title="Mew" />
           <Button variant="special">Gold</Button>
           <CardContentContainer>
