@@ -14,7 +14,7 @@ import { ProgressWithDescription } from './components/ui/ProgressWithDescription
 import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import { Modal } from './components/ui/Modal';
-import arrowfilter from './icons/ArrowFilter.svg';
+import arrowfilter from './icons/arrowFilter.svg';
 import { Grid } from './components/ui/Grid';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Headline } from './components/ui/Headline';
