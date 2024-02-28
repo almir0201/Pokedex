@@ -1,18 +1,16 @@
+import { cn } from '../../lib/utils';
+
 export const Paragraph = ({ className, children, variant, font }) => {
-  let UIstyle = 'text-base font-normal text-black ';
   let fontFamily = font ?? 'font-roboto';
-  if (variant === 'xl') {
-    UIstyle += ' text-xl hover:underline underline-offset-[15px]';
-  }
-  if (variant === 'xs') {
-    UIstyle += ' text-sm text-dark';
-  }
-  if (variant === 'lg') {
-    UIstyle += ' text-l text-dark';
-  }
-  if (variant === 'md') {
-    UIstyle += ' text-md';
-  }
-  UIstyle += ` ${fontFamily} ${className}`;
-  return <p className={UIstyle}>{children}</p>;
+  return (
+    <p
+      className={cn('text-base font-normal text-black', fontFamily, className, {
+        'text-xl hover:underline underline-offset-[15px]': variant === 'xl',
+        'text-sm text-dark': variant === 'xs',
+        'text-lg text-dark': variant === 'lg',
+        'text-md': variant === 'md'
+      })}>
+      {children}
+    </p>
+  );
 };
