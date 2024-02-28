@@ -2,7 +2,6 @@ import '../index.css';
 import React, { useState } from 'react';
 import { Input } from '../components/ui/Input';
 import { Checkbox } from '../components/ui/Checkbox';
-import { Header } from '../components/Header';
 import { Cardtag } from '../components/ui/Cardtag';
 import { Button } from '../components/ui/Button';
 import { Cardprop } from '../components/ui/Cardprop';
@@ -38,7 +37,6 @@ function ComponentsPreview() {
 
   return (
     <div className="App">
-      <Header />
       <div className="container">
         <div className="grid grid-cols-12">
           <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
