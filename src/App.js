@@ -15,16 +15,38 @@ import { Dropdown, Content, Item, Trigger } from './components/ui/Dropdown';
 import { Paragraph } from './components/ui/Paragraph';
 import { Modal } from './components/ui/Modal';
 import arrowfilter from './icons/arrowFilter.svg';
+import charizard from './images/charizard.png';
 import { Grid } from './components/ui/Grid';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Headline } from './components/ui/Headline';
 import { CardTitle } from './components/ui/CardTitle';
+import { BaseCard } from './components/ui/BaseCard';
 
 const queryClient = new QueryClient();
 
 function App() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
   const options = ['Fire', 'Normal', 'Electric', 'Water'];
+  const cardtagTypes = [
+    {
+      variant: 'default',
+      label: 'Grass'
+    },
+    {
+      variant: 'poison',
+      label: 'Poison'
+    }
+  ];
+  const powerStats = [
+    {
+      value: '888',
+      label: 'Attack'
+    },
+    {
+      value: '888',
+      label: 'Defence'
+    }
+  ];
 
   const [checked, setChecked] = useState(new Array(options.length).fill(false));
   const [open, setOpen] = useState(false);
@@ -103,7 +125,7 @@ function App() {
             <Cardprop value="888" label="Attack" />
           </CardContentContainer>
           <AspectRatio variant="1/1">
-            <img src="/assets/charizard.png" alt="charizard" />
+            <img src={charizard} alt="charizard" />
           </AspectRatio>
           <Progressbar currentValue={80} />
           <CardContentContainer>
@@ -112,6 +134,13 @@ function App() {
           </CardContentContainer>
           <Types data={testArr} />
           <ProgressWithDescription title="Attack" label="2342342" value={80} />
+          <BaseCard
+            title="Charizard"
+            imageSrc={charizard}
+            imageAlt="charizard"
+            powerStats={powerStats}
+            cardtagTypes={cardtagTypes}
+          />
         </div>
       </div>
     </QueryClientProvider>

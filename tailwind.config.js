@@ -25,7 +25,7 @@ module.exports = {
     fontSize: {
       xs: '12px',
       sm: '14px',
-      md: '16px',
+      md: '18px',
       lg: '23px',
       xl: '25px',
       '2xl': '35px',
@@ -54,7 +54,8 @@ module.exports = {
         poison: '#07D6F2',
         lightgray: '#F2F2F2',
         graySecond: '#F5F5F5',
-        gold: '#F2CB07'
+        gold: '#F2CB07',
+        darkGray: '#4B4B4B'
       },
       fontFamily: {
         sanspro: 'Source Sans Pro',
