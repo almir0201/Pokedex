@@ -13,7 +13,7 @@ import { ProgressWithDescription } from '../components/ui/ProgressWithDescriptio
 import { Dropdown, Content, Item, Trigger } from '../components/ui/Dropdown';
 import { Paragraph } from '../components/ui/Paragraph';
 import { Modal } from '../components/ui/Modal';
-import arrowfilter from '../icons/ArrowFilter.svg';
+import arrowfilter from '../icons/arrowFilter.svg';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
