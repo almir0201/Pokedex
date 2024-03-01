@@ -99,7 +99,7 @@ function App() {
           <Cardtag variant="poison">Poison</Cardtag>
           <Cardtag>Grass</Cardtag>
           <Button>Grass</Button>
-          <SpecialCard title="Meeew" children={pokemonImage} />
+          <SpecialCard title="Meeew" imageSrc={pokemonImage} imageAlt="pokemonImage" />
           <CardTitle title="Mew" />
           <Button variant="special">Gold</Button>
           <CardContentContainer>
