@@ -14,6 +14,7 @@ import { Dropdown, Content, Item, Trigger } from '../components/ui/Dropdown';
 import { Paragraph } from '../components/ui/Paragraph';
 import { Modal } from '../components/ui/Modal';
 import arrowfilter from '../icons/arrowFilter.svg';
+import charizard from '../images/charizard.png';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
@@ -70,7 +71,7 @@ function ComponentsPreview() {
           <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
         </Modal>
         <Cardtag variant="poison">Poison</Cardtag>
-        <Cardtag variant="grass">Grass</Cardtag>
+        <Cardtag>Grass</Cardtag>
         <Button>Grass</Button>
         <CardContentContainer>
           <Cardprop value="888" label="Attack" />
@@ -83,7 +84,7 @@ function ComponentsPreview() {
         <Types data={testArr} />
         <ProgressWithDescription title="Attack" label="2342342" value={80} />
         <AspectRatio variant="1/1">
-          <img src="/assets/charizard.png" alt="charizard" />
+          <img src={charizard} alt="charizard" />
         </AspectRatio>
       </div>
     </div>
