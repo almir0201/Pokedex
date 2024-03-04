@@ -17,10 +17,31 @@ import arrowfilter from '../icons/arrowFilter.svg';
 import charizard from '../images/charizard.png';
 import { SpecialCard } from '../components/ui/SpecialCard';
 import pokemonImage from '../images/pokemonImage.png';
+import { BaseCard } from '../components/ui/BaseCard';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
   const options = ['Fire', 'Normal', 'Electric', 'Water'];
+  const cardtagTypes = [
+    {
+      variant: 'default',
+      label: 'Grass'
+    },
+    {
+      variant: 'poison',
+      label: 'Poison'
+    }
+  ];
+  const powerStats = [
+    {
+      value: '888',
+      label: 'Attack'
+    },
+    {
+      value: '888',
+      label: 'Defence'
+    }
+  ];
 
   const [checked, setChecked] = useState(new Array(options.length).fill(false));
   const [open, setOpen] = useState(false);
@@ -89,6 +110,13 @@ function ComponentsPreview() {
         <AspectRatio variant="1/1">
           <img src={charizard} alt="charizard" />
         </AspectRatio>
+        <BaseCard
+          title="Charizard"
+          imageSrc={charizard}
+          imageAlt="charizard"
+          powerStats={powerStats}
+          cardtagTypes={cardtagTypes}
+        />
       </div>
     </div>
   );
