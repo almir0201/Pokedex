@@ -13,9 +13,11 @@ export const BaseCard = ({ title, imageSrc, imageAlt, powerStats, cardtagTypes }
     <CardContentContainer>
       <HorizontalLayout justify="end" className="mb-10 pl-6 relative">
         <div className="absolute left-6 top-2 w-1/2 z-10">
-          <Paragraph variant="md" lineHeight="leading">
-            <b>{title && title}</b>
-          </Paragraph>
+          {title && (
+            <Paragraph variant="md" lineHeight="leading">
+              <b>{title}</b>
+            </Paragraph>
+          )}
           <HorizontalLayout align="start" justify="start" className="gap-3">
             {powerStats?.map((data, index) => (
               <Cardprop
@@ -35,9 +37,11 @@ export const BaseCard = ({ title, imageSrc, imageAlt, powerStats, cardtagTypes }
           </HorizontalLayout>
         </div>
         <div className="red-gradient basis-2/3 pr-4 pl-12 rounded-r-lg">
-          <AspectRatio variant="1/1">
-            <img src={imageSrc && imageSrc} alt={imageAlt && imageAlt} />
-          </AspectRatio>
+          {imageSrc && (
+            <AspectRatio variant="1/1">
+              <img src={imageSrc} alt={imageAlt} />
+            </AspectRatio>
+          )}
         </div>
       </HorizontalLayout>
     </CardContentContainer>
