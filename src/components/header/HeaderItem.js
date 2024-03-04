@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Paragraph } from './Paragraph';
+import { Paragraph } from '../ui/Paragraph';
 
-export const HeaderItem = ({ children }) => {
+export const HeaderItem = ({ children, to }) => {
   return (
     <div>
-      <Link href="/">
+      <Link to={to}>
         <Paragraph variant="xl" font="font-karla">
           {children}
         </Paragraph>
