@@ -1,6 +1,6 @@
 import React from 'react';
-import { Paragraph } from './Paragraph';
-import { Progressbar } from './Progressbar';
+import { Paragraph } from '../Paragraph/Paragraph';
+import { Progressbar } from '../Progressbar/Progressbar';
 
 export const ProgressWithDescription = ({ title, label, value }) => {
   return (

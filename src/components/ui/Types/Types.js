@@ -1,4 +1,4 @@
-import { Checkbox } from './Checkbox';
+import { Checkbox } from '../Checkbox/Checkbox';
 
 export const Types = ({ data, className }) => {
   if (!data.length) return null;

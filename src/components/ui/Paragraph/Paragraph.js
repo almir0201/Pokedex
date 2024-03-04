@@ -1,4 +1,4 @@
-import { cn } from '../../lib/utils';
+import { cn } from '../../../lib/utils';
 
 export const Paragraph = ({ className, children, variant, font }) => {
   let fontFamily = font ?? 'font-roboto';

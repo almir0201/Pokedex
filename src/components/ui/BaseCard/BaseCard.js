@@ -1,10 +1,10 @@
 import React from 'react';
-import { Cardtag } from './Cardtag';
-import { Cardprop } from './Cardprop';
-import { AspectRatio } from './AspectRatio';
-import { CardContentContainer } from './CardContentContainer';
-import { Paragraph } from './Paragraph';
-import { HorizontalLayout } from './HorizontalLayout';
+import { Cardtag } from '../Cardtag/Cardtag';
+import { Cardprop } from '../Cardprop/Cardprop';
+import { AspectRatio } from '../AspectRatio/AspectRatio';
+import { CardContentContainer } from '../CardContentContainer/CardContentContainer';
+import { Paragraph } from '../Paragraph/Paragraph';
+import { HorizontalLayout } from '../HorizontalLayout/HorizontalLayout';
 
 export const BaseCard = ({ title, imageSrc, imageAlt, powerStats, cardtagTypes }) => {
   if (!powerStats.length || !cardtagTypes.length) return null;

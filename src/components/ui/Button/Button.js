@@ -1,5 +1,5 @@
-import { Paragraph } from './Paragraph';
-import { cn } from '../../lib/utils';
+import { Paragraph } from '../Paragraph/Paragraph';
+import { cn } from '../../../lib/utils';
 
 export const Button = ({ children, variant }) => {
   return (

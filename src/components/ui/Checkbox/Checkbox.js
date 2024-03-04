@@ -1,4 +1,4 @@
-import { cn } from '../../lib/utils';
+import { cn } from '../../../lib/utils';
 import { forwardRef } from 'react';
 
 export const Checkbox = forwardRef(({ label, className, ...props }, ref) => {
