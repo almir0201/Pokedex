@@ -64,7 +64,7 @@ module.exports = {
       },
       boxShadow: {
         xs: '4px 4px 4px 0px #2121211A',
-        xs: '0px -9px 0px 0px #0000002E inset',
+        '2xs': '0px -9px 0px 0px #0000002E inset',
         sm: '0px -2px 0px 0px rgba(0, 0, 0, 0.18) inset',
         md: '2px 2px 2px 0px #2121211A',
         lg: '4px 4px 24px -24px rgba(1, 17, 38, 0.20)',
