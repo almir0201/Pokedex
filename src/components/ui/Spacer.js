@@ -1,6 +1,6 @@
 import { cn } from '../../lib/utils';
 
-export const Spacer = ({ className, variant = 'default', children }) => {
+export const Spacer = ({ className, variant = 'default' }) => {
   return (
     <div
       className={cn(className, {
@@ -9,8 +9,6 @@ export const Spacer = ({ className, variant = 'default', children }) => {
         'my-4': variant === 'm',
         'my-5': variant === 'l',
         'my-6': variant === 'xl'
-      })}>
-      {children}
-    </div>
+      })}></div>
   );
 };
