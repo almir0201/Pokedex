@@ -1,23 +1,27 @@
 import '../index.css';
 import React, { useState } from 'react';
-import { Input } from '../components/ui/Input';
-import { Checkbox } from '../components/ui/Checkbox';
-import { Cardtag } from '../components/ui/Cardtag';
-import { Button } from '../components/ui/Button';
-import { Cardprop } from '../components/ui/Cardprop';
-import { AspectRatio } from '../components/ui/AspectRatio';
-import { Progressbar } from '../components/ui/Progressbar';
-import { CardContentContainer } from '../components/ui/CardContentContainer';
-import { Types } from '../components/ui/Types';
-import { ProgressWithDescription } from '../components/ui/ProgressWithDescription';
-import { Dropdown, Content, Item, Trigger } from '../components/ui/Dropdown';
-import { Paragraph } from '../components/ui/Paragraph';
-import { Modal } from '../components/ui/Modal';
+import { Input } from '../components/ui/Input/Input';
+import { Checkbox } from '../components/ui/Checkbox/Checkbox';
+import { Cardtag } from '../components/ui/Cardtag/Cardtag';
+import { Button } from '../components/ui/Button/Button';
+import { Cardprop } from '../components/ui/Cardprop/Cardprop';
+import { AspectRatio } from '../components/ui/AspectRatio/AspectRatio';
+import { Progressbar } from '../components/ui/Progressbar/Progressbar';
+import { CardContentContainer } from '../components/ui/CardContentContainer/CardContentContainer';
+import { Types } from '../components/ui/Types/Types';
+import { ProgressWithDescription } from '../components/ui/ProgressWithDescription/ProgressWithDescription';
+import { Dropdown, Content, Item, Trigger } from '../components/ui/Dropdown/Dropdown';
+import { Paragraph } from '../components/ui/Paragraph/Paragraph';
+import { Modal } from '../components/ui/Modal/Modal';
 import arrowfilter from '../icons/arrowFilter.svg';
 import charizard from '../images/charizard.png';
+<<<<<<< HEAD
+import { BaseCard } from '../components/ui/BaseCard/BaseCard';
+=======
 import { SpecialCard } from '../components/ui/SpecialCard';
 import pokemonImage from '../images/pokemonImage.png';
 import { BaseCard } from '../components/ui/BaseCard';
+>>>>>>> main
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
