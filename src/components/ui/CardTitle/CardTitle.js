@@ -1,5 +1,5 @@
 import { Paragraph } from '../Paragraph/Paragraph';
-import Icon from '../../icons/goldenPokeball.svg';
+import Icon from '../../../icons/goldenPokeball.svg';
 
 export const CardTitle = ({ title, icon }) => {
   return (
