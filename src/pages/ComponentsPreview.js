@@ -15,13 +15,9 @@ import { Paragraph } from '../components/ui/Paragraph/Paragraph';
 import { Modal } from '../components/ui/Modal/Modal';
 import arrowfilter from '../icons/arrowFilter.svg';
 import charizard from '../images/charizard.png';
-<<<<<<< HEAD
-import { BaseCard } from '../components/ui/BaseCard/BaseCard';
-=======
 import { SpecialCard } from '../components/ui/SpecialCard';
 import pokemonImage from '../images/pokemonImage.png';
 import { BaseCard } from '../components/ui/BaseCard';
->>>>>>> main
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
