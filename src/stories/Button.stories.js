@@ -15,6 +15,6 @@ Green.args = {
 
 export const Blue = Template.bind({});
 Blue.args = {
-  children: 'Poison',
-  variant: 'poison'
+  children: 'Gold',
+  variant: 'special'
 };
