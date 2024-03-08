@@ -1,4 +1,4 @@
-import { cn } from '../../lib/utils';
+import { cn } from '../../../lib/utils';
 
 export const Headline = ({ children, as: Component = 'h1', type = 'h1', className }) => (
   <Component
