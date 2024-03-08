@@ -63,8 +63,8 @@ function ComponentsPreview() {
     <div className="App">
       <div className="container">
         <div className="grid grid-cols-12">
-          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
-          <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
+          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="lg" />
+          <Input className="col-span-4" placeholder="Encuentra tu pokémon..." variant="sm" />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
         <Dropdown>
