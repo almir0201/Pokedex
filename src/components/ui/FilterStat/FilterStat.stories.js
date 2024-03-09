@@ -1,4 +1,4 @@
-import { FilterStat } from '../components/ui/FilterStat/FilterStat';
+import { FilterStat } from './FilterStat';
 
 export default {
   title: 'Components/FilterStat',

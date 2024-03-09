@@ -1,4 +1,4 @@
-import { CardContentContainer } from '../components/ui/CardContentContainer/CardContentContainer';
+import { CardContentContainer } from './CardContentContainer';
 
 export default {
   title: 'Components/CardContentContainer',

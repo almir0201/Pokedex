@@ -1,4 +1,4 @@
-import { Grid } from '../components/ui/Grid/Grid';
+import { Grid } from './Grid';
 
 export default {
   title: 'Components/Grid',

@@ -1,56 +1,56 @@
-import { VerticalLayout } from '../components/ui/VerticalLayout/VerticalLayout';
+import { HorizontalLayout } from './HorizontalLayout';
 
 export default {
-  title: 'Components/VerticalLayout',
-  component: VerticalLayout
+  title: 'Components/HorizontalLayout',
+  component: HorizontalLayout
 };
 
-const Template = (args) => <VerticalLayout {...args} />;
+const Template = (args) => <HorizontalLayout {...args} />;
 
 export const AlignLeft = Template.bind({});
 AlignLeft.args = {
   children: 'items-start',
-  align: '',
-  justify: 'start',
+  align: 'start',
+  justify: '',
   className: ''
 };
 
 export const AlignCenter = Template.bind({});
 AlignCenter.args = {
   children: 'items-center',
-  align: '',
-  justify: 'center',
+  align: 'center',
+  justify: '',
   className: ''
 };
 
 export const AlignRight = Template.bind({});
 AlignRight.args = {
   children: 'items-end',
-  align: '',
-  justify: 'end',
+  align: 'end',
+  justify: '',
   className: ''
 };
 
 export const JustifyLeft = Template.bind({});
 JustifyLeft.args = {
   children: 'justify-start',
-  align: 'start',
-  justify: '',
+  align: '',
+  justify: 'start',
   className: ''
 };
 
 export const JustifyCenter = Template.bind({});
 JustifyCenter.args = {
   children: 'justify-center',
-  align: 'center',
-  justify: '',
+  align: '',
+  justify: 'center',
   className: ''
 };
 
 export const JustifyRight = Template.bind({});
 JustifyRight.args = {
   children: 'justify-end',
-  align: 'end',
-  justify: '',
+  align: '',
+  justify: 'end',
   className: ''
 };

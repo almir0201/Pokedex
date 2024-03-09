@@ -1,4 +1,4 @@
-import { Headline } from '../components/ui/Headline/Headline';
+import { Headline } from './Headline';
 
 export default {
   title: 'Components/Headline',

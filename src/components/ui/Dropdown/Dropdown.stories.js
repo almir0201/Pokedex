@@ -1,7 +1,7 @@
-import { Dropdown, Content, Item, Trigger } from '../components/ui/Dropdown/Dropdown';
-import { Paragraph } from '../components/ui/Paragraph/Paragraph';
-import arrowfilter from '../icons/arrowFilter.svg';
-import { Checkbox } from '../components/ui/Checkbox/Checkbox';
+import { Dropdown, Content, Item, Trigger } from './Dropdown';
+import { Paragraph } from '../Paragraph/Paragraph';
+import arrowfilter from '../../../icons/arrowFilter.svg';
+import { Checkbox } from '../Checkbox/Checkbox';
 import { useState } from 'react';
 
 export default {

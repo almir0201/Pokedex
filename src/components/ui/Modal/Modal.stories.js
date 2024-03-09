@@ -1,4 +1,4 @@
-import { Modal } from '../components/ui/Modal/Modal';
+import { Modal } from './Modal';
 
 export default {
   title: 'Components/Modal',

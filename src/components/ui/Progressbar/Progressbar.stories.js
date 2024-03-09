@@ -1,4 +1,4 @@
-import { Progressbar } from '../components/ui/Progressbar/Progressbar';
+import { Progressbar } from './Progressbar';
 
 export default {
   title: 'Components/Progressbar',
