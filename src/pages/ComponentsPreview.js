@@ -15,9 +15,10 @@ import { Paragraph } from '../components/ui/Paragraph/Paragraph';
 import { Modal } from '../components/ui/Modal/Modal';
 import arrowfilter from '../icons/arrowFilter.svg';
 import charizard from '../images/charizard.png';
-import { BaseCard } from '../components/ui/BaseCard/BaseCard';
 import { SpecialCard } from '../components/ui/SpecialCard/SpecialCard';
 import pokemonImage from '../images/pokemonImage.png';
+import { BaseCard } from '../components/ui/BaseCard/BaseCard';
+import { Headline } from '../components/ui/Headline/Headline';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
@@ -96,6 +97,9 @@ function ComponentsPreview() {
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag>Grass</Cardtag>
         <Button>Grass</Button>
+        <Headline className="bg-black" type="h6">
+          Aaaaaaaaa
+        </Headline>
         <SpecialCard title="Meeew" imageSrc={pokemonImage} imageAlt="pokemonImage" />
         <CardContentContainer>
           <Cardprop value="888" label="Attack" />
