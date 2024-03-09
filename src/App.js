@@ -39,10 +39,8 @@ function App() {
         <CardContentContainer>
           <FilterStat
             variant="sm"
-            labelFrom="From"
-            labelTo="To"
-            placeholderFrom="70 000"
-            placeholderTo="50 000"
+            from={{ label: 'From', placeholder: '70 000' }}
+            to={{ label: 'To', placeholder: '50 000' }}
           />
         </CardContentContainer>
         <ProgressWithDescription title="Attack" label="2342342" value={80} />
