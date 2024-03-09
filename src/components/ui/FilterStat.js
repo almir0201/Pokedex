@@ -1,13 +1,21 @@
 import { Input } from './Input';
+import { cn } from '../../lib/utils';
 
-export const FilterStat = () => {
+export const FilterStat = ({
+  variant,
+  className,
+  labelFrom,
+  labelTo,
+  placeholderFrom,
+  placeholderTo
+}) => {
   return (
-    <div className="flex justify-between items-center gap-4">
-      <Input placeholder="70 000" variant="sm" label="From" />
+    <div className={cn('flex justify-between items-center gap-4', className)}>
+      <Input placeholder={placeholderFrom} variant={variant} label={labelFrom} />
 
-      <p className="border-b-2 mt-6 w-6" />
+      <span className="bg-black mt-6 h-[2px] w-6" />
 
-      <Input placeholder="50 000" variant="sm" label="To" />
+      <Input placeholder={placeholderTo} variant={variant} label={labelTo} />
     </div>
   );
 };

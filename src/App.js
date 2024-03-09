@@ -17,7 +17,7 @@ function App() {
       <Header />
       <div className="container">
         <div className="grid grid-cols-12">
-          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="big" />
+          <Input className="mb-2 col-span-4" placeholder="Encuentra tu pokémon..." variant="lg" />
           <Input className="col-span-4" placeholder="Encuentra tu pokémon..." />
           <Checkbox className="col-span-4" label="Electric" />
         </div>
@@ -37,7 +37,13 @@ function App() {
         </CardContentContainer>
 
         <CardContentContainer>
-          <FilterStat />
+          <FilterStat
+            variant="sm"
+            labelFrom="From"
+            labelTo="To"
+            placeholderFrom="70 000"
+            placeholderTo="50 000"
+          />
         </CardContentContainer>
         <ProgressWithDescription title="Attack" label="2342342" value={80} />
       </div>

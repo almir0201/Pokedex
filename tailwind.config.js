@@ -61,9 +61,6 @@ module.exports = {
         xxl: '40px',
         'header-item-bottom': '0 0 16px 16px'
       },
-      borderWidth: {
-        3: '3px'
-      },
       inset: {
         large: 'calc(50% - 12px)'
       },
