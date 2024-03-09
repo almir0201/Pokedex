@@ -20,6 +20,7 @@ import pokemonImage from '../images/pokemonImage.png';
 import { BaseCard } from '../components/ui/BaseCard/BaseCard';
 import { Headline } from '../components/ui/Headline/Headline';
 import { FilterStat } from '../components/ui/FilterStat/FilterStat';
+import { FilterWithinRange } from '../components/ui/FilterWithinRange/FilterWithinRange';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
@@ -97,7 +98,7 @@ function ComponentsPreview() {
         </Modal>
         <Cardtag variant="poison">Poison</Cardtag>
         <Cardtag>Grass</Cardtag>
-        <Button>Grass</Button>
+        <Button textVariant="lg">Grass</Button>
         <Headline className="bg-black" type="h6">
           Aaaaaaaaa
         </Headline>
@@ -128,6 +129,12 @@ function ComponentsPreview() {
           imageAlt="charizard"
           powerStats={powerStats}
           cardtagTypes={cardtagTypes}
+        />
+        <FilterWithinRange
+          label="Experience"
+          variant="sm"
+          from={{ label: 'From', placeholder: '70 000' }}
+          to={{ label: 'To', placeholder: '50 000' }}
         />
       </div>
     </div>

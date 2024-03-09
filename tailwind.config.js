@@ -36,6 +36,9 @@ module.exports = {
       '7xl': '72px'
     },
     extend: {
+      spacing: {
+        '2px': '2px'
+      },
       width: {
         xxl: '135px'
       },
