@@ -1,6 +1,6 @@
-import { cn } from '../../lib/utils';
+import { cn } from '../../../lib/utils';
 import { forwardRef } from 'react';
-import { Paragraph } from './Paragraph';
+import { Paragraph } from '../Paragraph/Paragraph';
 
 export const Input = forwardRef(({ variant, className, label, ...props }, ref) => {
   return (

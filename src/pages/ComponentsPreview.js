@@ -19,6 +19,7 @@ import { SpecialCard } from '../components/ui/SpecialCard/SpecialCard';
 import pokemonImage from '../images/pokemonImage.png';
 import { BaseCard } from '../components/ui/BaseCard/BaseCard';
 import { Headline } from '../components/ui/Headline/Headline';
+import { FilterStat } from '../components/ui/FilterStat/FilterStat';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
