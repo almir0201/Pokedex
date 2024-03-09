@@ -1,4 +1,4 @@
-import { Input } from './Input';
+import { Input } from './Input/Input';
 import { cn } from '../../lib/utils';
 
 export const FilterStat = ({ variant, className, from, to }) => {
