@@ -1,4 +1,4 @@
-import { Cardtag } from '../components/ui/Cardtag/Cardtag';
+import { Cardtag } from './Cardtag';
 
 export default {
   title: 'Components/Cardtag',

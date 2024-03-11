@@ -1,5 +1,5 @@
-import { AspectRatio } from '../components/ui/AspectRatio/AspectRatio';
-import charizard from '../images/charizard.png';
+import { AspectRatio } from './AspectRatio';
+import charizard from '../../../images/charizard.png';
 
 export default {
   title: 'Components/AspectRatio',

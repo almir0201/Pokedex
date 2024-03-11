@@ -1,4 +1,4 @@
-import { Types } from '../components/ui/Types/Types';
+import { Types } from './Types';
 
 export default {
   title: 'Components/Types',

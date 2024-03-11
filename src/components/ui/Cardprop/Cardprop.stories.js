@@ -1,4 +1,4 @@
-import { Cardprop } from '../components/ui/Cardprop/Cardprop';
+import { Cardprop } from './Cardprop';
 
 export default {
   title: 'Components/Cardprop',

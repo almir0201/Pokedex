@@ -111,13 +111,11 @@ function ComponentsPreview() {
           <p>lorem ipsum lorem ipsumlorem ipsumlorem ipsumaaaaaaaaaaaa</p>
         </CardContentContainer>
         <Types data={testArr} />
-        <CardContentContainer>
-          <FilterStat
-            variant="sm"
-            from={{ label: 'From', placeholder: '70 000' }}
-            to={{ label: 'To', placeholder: '50 000' }}
-          />
-        </CardContentContainer>
+        <FilterStat
+          variant="sm"
+          from={{ label: 'From', placeholder: '70 000' }}
+          to={{ label: 'To', placeholder: '50 000' }}
+        />
         <ProgressWithDescription title="Attack" label="2342342" value={80} />
         <AspectRatio variant="1/1">
           <img src={charizard} alt="charizard" />

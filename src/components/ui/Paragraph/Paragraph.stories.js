@@ -1,4 +1,4 @@
-import { Paragraph } from '../components/ui/Paragraph/Paragraph';
+import { Paragraph } from './Paragraph';
 
 export default {
   title: 'Components/Paragraph',
