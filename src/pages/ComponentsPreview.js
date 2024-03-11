@@ -21,6 +21,7 @@ import { BaseCard } from '../components/ui/BaseCard/BaseCard';
 import { Headline } from '../components/ui/Headline/Headline';
 import { FilterStat } from '../components/ui/FilterStat/FilterStat';
 import { FilterWithinRange } from '../components/ui/FilterWithinRange/FilterWithinRange';
+import { useQuery } from '@tanstack/react-query';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
@@ -61,6 +62,13 @@ function ComponentsPreview() {
   const handleOpen = () => {
     setOpen(true);
   };
+
+  const { data, error, isLoading } = useQuery({
+    queryKey: ['pokemon'],
+    queryFn: () => fetch('https://pokeapi.co/api/v2/pokemon').then((res) => res.json())
+  });
+  if (error) return <div>There was an error!</div>;
+  if (isLoading) return <div>DATA IS LOADING...</div>;
 
   return (
     <div className="App">
@@ -136,6 +144,13 @@ function ComponentsPreview() {
           from={{ label: 'From', placeholder: '70 000' }}
           to={{ label: 'To', placeholder: '50 000' }}
         />
+        <div>
+          {data?.results.map((pokemon) => (
+            <div>
+              <h1>Name: {pokemon.name}</h1>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
