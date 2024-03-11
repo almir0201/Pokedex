@@ -64,6 +64,8 @@ function ComponentsPreview() {
   };
 
   const { data, error, isLoading } = useQuery({
+    staleTime: 10 * (60 * 1000),
+    cacheTime: Infinity,
     queryKey: ['pokemon'],
     queryFn: () => fetch('https://pokeapi.co/api/v2/pokemon').then((res) => res.json())
   });
@@ -145,10 +147,8 @@ function ComponentsPreview() {
           to={{ label: 'To', placeholder: '50 000' }}
         />
         <div>
-          {data?.results.map((pokemon) => (
-            <div>
-              <h1>Name: {pokemon.name}</h1>
-            </div>
+          {data.results.map((pokemon, index) => (
+            <h1 key={index}>Name: {pokemon.name}</h1>
           ))}
         </div>
       </div>
