@@ -13,5 +13,6 @@ Default.args = {
   variant: 'sm',
   from: { label: 'From', placeholder: '70 000' },
   to: { label: 'To', placeholder: '50 000' },
+  button: { onClick: () => {}, label: 'Apply' },
   className: ''
 };

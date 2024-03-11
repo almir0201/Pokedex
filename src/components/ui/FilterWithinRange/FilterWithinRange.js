@@ -5,21 +5,27 @@ import { Button } from '../Button/Button';
 import { Spacer } from '../Spacer/Spacer';
 import { VerticalLayout } from '../VerticalLayout/VerticalLayout';
 
-export const FilterWithinRange = ({ label, from, to, variant, className, onClickApply }) => {
+export const FilterWithinRange = ({
+  label,
+  from,
+  to,
+  variant,
+  className,
+  button: { onClick, label: buttonLabel }
+}) => {
   return (
     <VerticalLayout className={className}>
-      <Paragraph className="mb-2" variant="lg">
-        {label}
-      </Paragraph>
+      <Paragraph variant="lg">{label}</Paragraph>
+      <Spacer variant="s" />
       <CardContentContainer>
         <Spacer />
         <VerticalLayout align="end" className="ml-3 mr-6">
           <FilterStat from={from} to={to} variant={variant} />
           <Button
-            className="shadow-none px-4 py-2px mt-5 ml-auto"
+            className="shadow-none px-4 pb-2px pt-2px mt-5 ml-auto"
             textVariant="xs"
-            onClick={onClickApply}>
-            Apply
+            onClick={onClick}>
+            {buttonLabel}
           </Button>
         </VerticalLayout>
         <Spacer />
