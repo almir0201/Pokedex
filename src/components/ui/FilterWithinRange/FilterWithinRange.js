@@ -23,7 +23,7 @@ export const FilterWithinRange = ({
           <FilterStat from={from} to={to} variant={variant} />
           <Button
             className="shadow-none px-4 pb-2px pt-2px mt-5 ml-auto"
-            textVariant="xs"
+            variant="xs"
             onClick={onClick}>
             {buttonLabel}
           </Button>
