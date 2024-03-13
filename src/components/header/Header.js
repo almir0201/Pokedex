@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { HeaderItem } from './HeaderItem';
 import logo from '../../images/logo.png';
 import { routes } from '../../index';
+import { Links } from '../ui/Links/Links';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -53,9 +53,9 @@ export const Header = () => {
                   : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
               }`}>
               {routes.children.map((route, index) => (
-                <HeaderItem key={index} to={route.path}>
+                <Links key={index} to={route.path}>
                   {route.title}
-                </HeaderItem>
+                </Links>
               ))}
             </div>
           </div>
