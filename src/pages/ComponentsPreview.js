@@ -20,6 +20,7 @@ import pokemonImage from '../images/pokemonImage.png';
 import { BaseCard } from '../components/ui/BaseCard/BaseCard';
 import { Headline } from '../components/ui/Headline/Headline';
 import { FilterStat } from '../components/ui/FilterStat/FilterStat';
+import { Footer } from '../components/ui/Footer/Footer';
 
 function ComponentsPreview() {
   const testArr = ['Bug', 'Fairy', 'Ghost', 'Dark', 'Fire', 'Glass', 'Lorem'];
@@ -127,6 +128,7 @@ function ComponentsPreview() {
           powerStats={powerStats}
           cardtagTypes={cardtagTypes}
         />
+        <Footer />
       </div>
     </div>
   );

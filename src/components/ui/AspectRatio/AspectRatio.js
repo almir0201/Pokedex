@@ -1,10 +1,11 @@
 import { cn } from '../../../lib/utils';
 
-export const AspectRatio = ({ children, variant }) => {
+export const AspectRatio = ({ children, variant, className }) => {
   return (
     <div
       className={cn(
-        'relative overflow-hidden [&>*]:absolute [&>*]:left-0 [&>*]:w-full [&>*]:h-full',
+        'relative overflow-hidden [&>*]:absolute [&>*]:left-0 [&>*]:w-full [&>*]:h-full [&>*]:object-contain',
+        className,
         {
           'pb-[100%]': variant === '1/1',
           'pb-[56.25%]': variant === '16/9',
