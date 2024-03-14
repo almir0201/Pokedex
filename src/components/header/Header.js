@@ -23,8 +23,7 @@ export const Header = () => {
 
   return (
     <>
-      {open && <div className="fixed top-0 left-0 w-screen h-screen bg-dark bg-opacity-90"></div>}
-      <nav className="bg-third relative z-10">
+      <nav className={`bg-third relative z-10 md:shadow-2xl ${open ? 'shadow-7xl' : 'shadow-2xl'}`}>
         <div className="container">
           <div
             ref={closeMenu}
