@@ -2,7 +2,6 @@ import './index.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import ComponentsPreview from './pages/ComponentsPreview';
 import Documentation from './pages/Documentation';
 import Pokedex from './pages/Pokedex';
 import Legendaries from './pages/Legendaries';
@@ -17,7 +16,6 @@ export const routes = {
   element: <MainLayout />,
   children: [
     { path: '/', element: <Root />, title: 'Home' },
-    { path: 'preview', element: <ComponentsPreview />, title: 'Components Preview' },
     { path: 'pokedex', element: <Pokedex />, title: 'Pokedex' },
     { path: 'legendaries', element: <Legendaries />, title: 'Legendaries' },
     { path: 'documentation', element: <Documentation />, title: 'Documentation' }
