@@ -49,9 +49,9 @@ function App() {
             className="lg:ml-40 lg:w-1/3 order-last lg:order-first text-center lg:text-left"
             width={width}
             headline={
-              <>
+              <p>
                 <b>Find</b> all your favorite <b>Pokemon</b>
-              </>
+              </p>
             }
             paragraph="You can know the type of Pokemon, its strengths, disadvantages and abilities"
             buttonText={<b>See Pokemons</b>}
