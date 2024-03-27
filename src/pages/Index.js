@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Footer } from '../components/ui/Footer/Footer';
 import { VerticalLayout } from '../components/ui/VerticalLayout/VerticalLayout';
 import { AspectRatio } from '../components/ui/AspectRatio/AspectRatio';
@@ -9,17 +9,17 @@ import pokeball2 from '../images/Pokeball2.png';
 import clouds from '../images/Clouds.png';
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResizeWindow);
-    return () => {
-      window.removeEventListener('resize', handleResizeWindow);
-    };
-  }, []);
+  // const [width, setWidth] = useState(window.innerWidth);
+  // useEffect(() => {
+  //   const handleResizeWindow = () => setWidth(window.innerWidth);
+  //   window.addEventListener('resize', handleResizeWindow);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResizeWindow);
+  //   };
+  // }, []);
   return (
     <main>
-      <VerticalLayout className="bg-gradient-to-b from-third to-primary pt-11 md:pt-5 lg:pt-16 lg:overflow-hidden lg:min-h-screen">
+      <VerticalLayout className="bg-gradient-to-b from-third to-primary pt-11 md:pt-5 lg:pt-16 overflow-hidden lg:min-h-screen">
         <VerticalLayout className="lg:flex-row lg:gap-2 pb-7 md:mb-8">
           <div className="lg:basis-2/3">
             <div className="relative md:mx-8 lg:mx-0">
@@ -28,7 +28,7 @@ function App() {
                   <img src={pokeball1} alt="pokeball1" />
                 </AspectRatio>
               </div>
-              <div className="absolute w-[74%] lg:w-full max-w-[544px] lg:max-w-[684px] right-[19%] top-[3%]">
+              <div className="absolute w-[74%] lg:w-full max-w-[544px] lg:max-w-[684px] right-[9%] top-[3%]">
                 <AspectRatio variant="14/9">
                   <img src={clouds} alt="clouds" />
                 </AspectRatio>
@@ -47,7 +47,7 @@ function App() {
           </div>
           <Hero
             className="lg:ml-40 lg:w-1/3 order-last lg:order-first text-center lg:text-left"
-            width={width}
+            // width={width}
             headline={
               <p>
                 <b>Find</b> all your favorite <b>Pokemon</b>
@@ -58,10 +58,9 @@ function App() {
           />
         </VerticalLayout>
         <Footer
-          className="mt-auto justify-between"
+          className="justify-between"
           labelLeft="Make with ❤️ for the PokéSpartans team Platzi Master"
           labelRight="Ours Team"
-          width={width}
         />
       </VerticalLayout>
     </main>

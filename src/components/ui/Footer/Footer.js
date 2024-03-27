@@ -2,9 +2,9 @@ import { cn } from '../../../lib/utils';
 import { VerticalLayout } from '../VerticalLayout/VerticalLayout';
 import { Paragraph } from '../Paragraph/Paragraph';
 
-export const Footer = ({ labelRight, labelLeft, className, width }) => {
+export const Footer = ({ labelRight, labelLeft, className }) => {
   return (
-    <div className="container">
+    <div className="container mt-auto mb-8">
       <div className={cn(className)}>
         <VerticalLayout justify="center" className="md:flex-row justify-between">
           <Paragraph variant="md" font="font-karla" className="md:order-last">
@@ -13,7 +13,7 @@ export const Footer = ({ labelRight, labelLeft, className, width }) => {
           <Paragraph
             variant="md"
             font="font-karla"
-            className={`text-center md:order-first ${width > 1535 ? 'font-bold' : 'font-normal'}`}>
+            className="text-center md:order-first lg:font-bold">
             {labelLeft}
           </Paragraph>
         </VerticalLayout>
