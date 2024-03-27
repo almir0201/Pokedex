@@ -1,4 +1,4 @@
-import { ProgressWithDescription } from '../components/ui/ProgressWithDescription/ProgressWithDescription';
+import { ProgressWithDescription } from './ProgressWithDescription';
 
 export default {
   title: 'Components/ProgressWithDescription',

@@ -12,7 +12,7 @@ export const BaseCard = ({ title, imageSrc, imageAlt, powerStats, cardtagTypes }
   return (
     <CardContentContainer>
       <HorizontalLayout justify="end" className="mb-10 pl-6 relative">
-        <div className="absolute left-6 top-2 w-1/2 z-10">
+        <div className="absolute left-6 top-2 w-1/2">
           {title && (
             <Paragraph variant="md" lineHeight="leading">
               <b>{title}</b>

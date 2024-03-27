@@ -1,5 +1,5 @@
-import { CardTitle } from '../components/ui/CardTitle/CardTitle';
-import Icon from '../icons/goldenPokeball.svg';
+import { CardTitle } from './CardTitle';
+import Icon from '../../../icons/goldenPokeball.svg';
 
 export default {
   title: 'Components/CardTitle',
