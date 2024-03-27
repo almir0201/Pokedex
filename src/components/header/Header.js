@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { HeaderItem } from './HeaderItem';
 import logo from '../../images/logo.png';
 import { routes } from '../../index';
+import { Links } from '../ui/Links/Links';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -23,8 +23,7 @@ export const Header = () => {
 
   return (
     <>
-      {open && <div className="fixed top-0 left-0 w-screen h-screen bg-dark bg-opacity-90"></div>}
-      <nav className="bg-third relative z-10">
+      <nav className={`bg-third relative z-10 md:shadow-2xl ${open ? 'shadow-7xl' : 'shadow-2xl'}`}>
         <div className="container">
           <div
             ref={closeMenu}
@@ -53,9 +52,9 @@ export const Header = () => {
                   : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
               }`}>
               {routes.children.map((route, index) => (
-                <HeaderItem key={index} to={route.path}>
+                <Links key={index} to={route.path}>
                   {route.title}
-                </HeaderItem>
+                </Links>
               ))}
             </div>
           </div>

@@ -12,11 +12,12 @@ module.exports = {
       lg: '1280px',
       // => @media (min-width: 1024px) { ... }
 
+<<<<<<< HEAD
       xl: '1536px',
+=======
+      xl: '1536px'
+>>>>>>> ce8676969e6c5fb8edf19426e04cd81b1d2e5e1c
       // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px'
-      // => @media (min-width: 1536px) { ... }
     },
     container: {
       width: '100%',
@@ -36,6 +37,9 @@ module.exports = {
       '7xl': '72px'
     },
     extend: {
+      spacing: {
+        '2px': '2px'
+      },
       width: {
         xxl: '135px'
       },
@@ -68,7 +72,9 @@ module.exports = {
         sm: '0px -2px 0px 0px rgba(0, 0, 0, 0.18) inset',
         md: '2px 2px 2px 0px #2121211A',
         lg: '4px 4px 24px -24px rgba(1, 17, 38, 0.20)',
-        xl: '4px 4px 8px 0px #011C4033'
+        xl: '4px 4px 8px 0px #011C4033',
+        '2xl': '0px 4px 16px 0px #011C4033',
+        '7xl': '0 0 0 8000px rgba(0, 0, 0, 0.6)'
       },
       borderRadius: {
         xxl: '40px'

@@ -1,3 +1,3 @@
 export const CardContentContainer = ({ children }) => {
-  return <div className="shadow-xl rounded-lg">{children}</div>;
+  return <div className="shadow-xs rounded-lg">{children}</div>;
 };
