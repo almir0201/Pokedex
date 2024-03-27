@@ -12,11 +12,7 @@ module.exports = {
       lg: '1280px',
       // => @media (min-width: 1024px) { ... }
 
-<<<<<<< HEAD
-      xl: '1536px',
-=======
       xl: '1536px'
->>>>>>> ce8676969e6c5fb8edf19426e04cd81b1d2e5e1c
       // => @media (min-width: 1280px) { ... }
     },
     container: {
