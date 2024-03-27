@@ -52,7 +52,7 @@ export const Header = () => {
                   : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
               }`}>
               {routes.children.map((route, index) => (
-                <Links key={index} to={route.path}>
+                <Links key={index} to={route.path} variant="xl" font="font-karla">
                   {route.title}
                 </Links>
               ))}
