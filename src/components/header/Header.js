@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import logo from '../../images/logo.png';
 import { routes } from '../../index';
 import { Links } from '../ui/Links/Links';
+import { Paragraph } from '../ui/Paragraph/Paragraph';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -55,7 +56,9 @@ export const Header = () => {
                 .filter((route) => route.title !== '404')
                 .map((route, index) => (
                   <Links key={index} to={route.path}>
-                    {route.title}
+                    <Paragraph variant="xl" font="font-karla">
+                      {route.title}
+                    </Paragraph>
                   </Links>
                 ))}
             </div>

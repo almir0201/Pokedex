@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { VerticalLayout } from '../components/ui/VerticalLayout/VerticalLayout';
 import { AspectRatio } from '../components/ui/AspectRatio/AspectRatio';
 import { Headline } from '../components/ui/Headline/Headline';
@@ -7,18 +6,8 @@ import teamRocket from '../images/teamRocket.png';
 import Error from '../images/404.png';
 import { Paragraph } from '../components/ui/Paragraph/Paragraph';
 import { Links } from '../components/ui/Links/Links';
-import { useNavigate } from 'react-router-dom';
 
-function App({ navigation }) {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResizeWindow);
-    return () => {
-      window.removeEventListener('resize', handleResizeWindow);
-    };
-  }, []);
-  const navigate = useNavigate();
+function App() {
   return (
     <main>
       <VerticalLayout
@@ -39,34 +28,32 @@ function App({ navigation }) {
           </div>
         </div>
         <VerticalLayout justify="center" className="lg:flex-row">
-          {width > 1023 ? (
+          <div className="hidden md:block">
             <Headline type="h3" className="lg:mr-3">
               <b>The rocket team</b>
             </Headline>
-          ) : (
+          </div>
+          <div className="block md:hidden">
             <Paragraph variant="2xl" className="text-white" font="font-karla">
               <b>The rocket team</b>
             </Paragraph>
-          )}
-          {width > 1023 ? (
+          </div>
+          <div className="hidden md:block">
             <Headline type="h3" className="text-black">
               <b>has won this time.</b>
             </Headline>
-          ) : (
+          </div>
+          <div className="block md:hidden">
             <Paragraph variant="2xl" font="font-karla">
               <b>has won this time.</b>
             </Paragraph>
-          )}
+          </div>
         </VerticalLayout>
-        <Links
-          o={'..'}
-          onClick={(e) => {
-            navigate(-1);
-          }}>
-          <Button
-            variant={width > 1023 ? 'lg' : 'md'}
-            className="mx-auto mt-16 px-10 md:px-20"
-            font="font-karla">
+        <Links to={-1}>
+          <Button variant="lg" className="mx-auto mt-16 hidden md:block" font="font-karla">
+            <b>Return</b>
+          </Button>
+          <Button variant="md" className="mx-auto mt-16 block md:hidden" font="font-karla">
             <b>Return</b>
           </Button>
         </Links>
