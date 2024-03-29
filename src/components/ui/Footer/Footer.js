@@ -19,3 +19,4 @@ export const Footer = ({ labelRight, labelLeft, className }) => {
       </div>
     </div>
   );
+}
