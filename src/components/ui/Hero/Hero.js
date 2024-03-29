@@ -18,12 +18,12 @@ export const Hero = ({ paragraph, headline, buttonText, className }) => {
     <div className={className}>
       <VerticalLayout align="start">
         <Headline
-          type={`${width > 1023 ? 'h1' : 'h5'}`}
+          type={width > 1023 ? 'h1' : 'h5'}
           className="text-black font-karla tracking-widest !leading-7xl">
           {headline}
         </Headline>
         <Paragraph
-          variant={`${width > 1279 ? '2xl' : 'xl'}`}
+          variant={width > 1279 ? '2xl' : 'xl'}
           className="text-black font-karla my-16 !leading-9">
           {paragraph}
         </Paragraph>
