@@ -7,14 +7,20 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Green = Template.bind({});
-Green.args = {
+export const Default = Template.bind({});
+Default.args = {
   children: 'Grass',
   variant: 'default'
 };
 
-export const Blue = Template.bind({});
-Blue.args = {
+export const Special = Template.bind({});
+Special.args = {
   children: 'Gold',
   variant: 'special'
+};
+
+export const xs = Template.bind({});
+xs.args = {
+  children: 'Apply',
+  variant: 'xs'
 };
