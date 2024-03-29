@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-import { cn } from '../../../lib/utils';
 import { VerticalLayout } from '../VerticalLayout/VerticalLayout';
 import { Paragraph } from '../Paragraph/Paragraph';
 
@@ -21,11 +19,3 @@ export const Footer = ({ labelRight, labelLeft, className }) => {
       </div>
     </div>
   );
-=======
-import { HorizontalLayout } from '../HorizontalLayout/HorizontalLayout';
-import { cn } from '../../../lib/utils';
-
-export const Footer = ({ children, className }) => {
-  return <HorizontalLayout className={cn(className)}>{children}</HorizontalLayout>;
->>>>>>> main
-};
