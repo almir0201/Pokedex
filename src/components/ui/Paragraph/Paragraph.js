@@ -11,7 +11,8 @@ export const Paragraph = ({ className, children, variant = 'default', font, line
         'text-lg': variant === 'lg',
         'text-base': variant === 'default',
         'text-md': variant === 'md',
-        'leading-7': lineHeight === 'leading'
+        'leading-7': lineHeight === 'leading',
+        'text-xl': variant === '2xl'
       })}>
       {children}
     </p>

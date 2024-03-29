@@ -1,10 +1,18 @@
 import { Header } from '../header/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 export const MainLayout = () => {
+  let location = useLocation();
   return (
     <div>
-      <Header />
+      {location.pathname === '/' ||
+      location.pathname === '/pokedex' ||
+      location.pathname === '/legendaries' ||
+      location.pathname === '/documentation' ? (
+        <Header />
+      ) : (
+        <></>
+      )}
       <Outlet />
     </div>
   );

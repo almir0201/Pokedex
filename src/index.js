@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Documentation from './pages/Documentation';
 import Pokedex from './pages/Pokedex';
 import Legendaries from './pages/Legendaries';
+import ErrorPage from './pages/ErrorPage';
 import Root from './pages/Index';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -18,7 +19,8 @@ export const routes = {
     { path: '/', element: <Root />, title: 'Home' },
     { path: 'pokedex', element: <Pokedex />, title: 'Pokedex' },
     { path: 'legendaries', element: <Legendaries />, title: 'Legendaries' },
-    { path: 'documentation', element: <Documentation />, title: 'Documentation' }
+    { path: 'documentation', element: <Documentation />, title: 'Documentation' },
+    { path: '*', element: <ErrorPage />, title: '404' }
   ]
 };
 
