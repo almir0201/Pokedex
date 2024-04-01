@@ -2,8 +2,8 @@ import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 import logo from '../../images/logo.png';
 import { routes } from '../../index';
-import { Links } from '../ui/Links/Links';
 import { Paragraph } from '../ui/Paragraph/Paragraph';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -54,12 +54,12 @@ export const Header = () => {
               }`}>
               {routes.children
                 .filter((route) => route.title !== '404')
-                .map((route, index) => (
-                  <Links key={index} to={route.path}>
+                .map((route, index = 1) => (
+                  <Link key={index} to={route.path}>
                     <Paragraph variant="xl" font="font-karla">
                       {route.title}
                     </Paragraph>
-                  </Links>
+                  </Link>
                 ))}
             </div>
           </div>

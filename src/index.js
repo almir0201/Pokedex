@@ -13,18 +13,19 @@ import { MainLayout } from './components/layout/MainLayout';
 
 const queryClient = new QueryClient();
 
+export const routesWithoutLayout = { path: '*', element: <ErrorPage />, title: '404' };
+
 export const routes = {
   element: <MainLayout />,
   children: [
     { path: '/', element: <Root />, title: 'Home' },
     { path: 'pokedex', element: <Pokedex />, title: 'Pokedex' },
     { path: 'legendaries', element: <Legendaries />, title: 'Legendaries' },
-    { path: 'documentation', element: <Documentation />, title: 'Documentation' },
-    { path: '*', element: <ErrorPage />, title: '404' }
+    { path: 'documentation', element: <Documentation />, title: 'Documentation' }
   ]
 };
 
-const router = createBrowserRouter([routes]);
+const router = createBrowserRouter([routes, routesWithoutLayout]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>

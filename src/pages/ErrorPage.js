@@ -5,7 +5,7 @@ import { Button } from '../components/ui/Button/Button';
 import teamRocket from '../images/teamRocket.png';
 import Error from '../images/404.png';
 import { Paragraph } from '../components/ui/Paragraph/Paragraph';
-import { Links } from '../components/ui/Links/Links';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -49,14 +49,14 @@ function App() {
             </Paragraph>
           </div>
         </VerticalLayout>
-        <Links to={-1}>
+        <Link to={-1}>
           <Button variant="lg" className="mx-auto mt-16 hidden md:block" font="font-karla">
             <b>Return</b>
           </Button>
           <Button variant="md" className="mx-auto mt-16 block md:hidden" font="font-karla">
             <b>Return</b>
           </Button>
-        </Links>
+        </Link>
       </VerticalLayout>
     </main>
   );
