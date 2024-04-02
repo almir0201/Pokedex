@@ -1,11 +1,5 @@
-import { Slider } from '../components/ui/Slider/Slider';
-
 function App() {
-  return (
-    <main>
-      <Slider />
-    </main>
-  );
+  return <main>This is Documentation page</main>;
 }
 
 export default App;

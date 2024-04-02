@@ -1,78 +1,34 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import '../../../index.css';
+import { Navigation } from 'swiper/modules';
+import arrowLeft from '../../../icons/arrowLeft.svg';
+import arrowRight from '../../../icons/arrowRight.svg';
+import { cn } from '../../../lib/utils';
 
-// Import Swiper styles
-import 'swiper/swiper.min.css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './styles.css';
-
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
-
-export const Slider = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
-
-  let appendNumber = 4;
-  let prependNumber = 1;
-
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-    ]);
-  };
-
-  const prepend = () => {
-    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + --prependNumber + '</div>');
-  };
-
-  const append = () => {
-    swiperRef.appendSlide('<div class="swiper-slide">Slide ' + ++appendNumber + '</div>');
-  };
-
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-    ]);
-  };
-
+export const Slider = ({ spaceBetween, slidesPerView, className, children }) => {
   return (
     <>
       <Swiper
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: 'fraction'
+        className={cn('w-full h-full', className)}
+        navigation={{
+          nextEl: '.image-swiper-button-next',
+          prevEl: '.image-swiper-button-prev',
+          disabledClass: 'swiper-button-disabled'
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        modules={[Navigation]}
+        spaceBetween={spaceBetween}
+        slidesPerView={slidesPerView}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}>
+        <SwiperSlide className="text-white">{children}</SwiperSlide>
+        <div className="swiper-button image-swiper-button-prev">
+          <img src={arrowLeft} />
+        </div>
+        <div className="swiper-button image-swiper-button-next right-0">
+          <img src={arrowRight} />
+        </div>
       </Swiper>
-
-      <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p>
     </>
   );
 };
