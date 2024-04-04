@@ -3,7 +3,6 @@ import { VerticalLayout } from '../VerticalLayout/VerticalLayout';
 import { Paragraph } from '../Paragraph/Paragraph';
 import { Headline } from '../Headline/Headline';
 import { Button } from '../Button/Button';
-import { Links } from '../Links/Links';
 
 export const Hero = ({ paragraph, headline, buttonText, className }) => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -27,9 +26,9 @@ export const Hero = ({ paragraph, headline, buttonText, className }) => {
           className="text-black font-karla my-16 !leading-9">
           {paragraph}
         </Paragraph>
-        <Links to="/Pokedex">
+        <Link to="/Pokedex">
           <Button className="mx-auto lg:mr-auto lg:ml-0 text-lg">{buttonText}</Button>
-        </Links>
+        </Link>
       </VerticalLayout>
     </div>
   );
