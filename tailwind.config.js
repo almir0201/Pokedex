@@ -81,6 +81,9 @@ module.exports = {
       borderWidth: {
         3: '3px'
       },
+      lineHeight: {
+        '7xl': '84px'
+      },
       transformOrigin: {
         1: '1px'
       },

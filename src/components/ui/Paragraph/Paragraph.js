@@ -5,14 +5,14 @@ export const Paragraph = ({ className, children, variant = 'default', font, line
   return (
     <p
       className={cn('text-base font-normal', fontFamily, lineHeight, className, {
-        'text-xl hover:underline underline-offset-[15px]': variant === 'xl',
+        'text-xl': variant === 'xl',
         'text-xs': variant === 'xs',
         'text-sm': variant === 'sm',
         'text-lg': variant === 'lg',
         'text-base': variant === 'default',
         'text-md': variant === 'md',
         'leading-7': lineHeight === 'leading',
-        'text-xl': variant === '2xl'
+        'text-2xl': variant === '2xl'
       })}>
       {children}
     </p>
