@@ -27,17 +27,16 @@
   }
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
   margin-left: 60px;
   margin-right: 60px;
-}
+} */
 
 .swiper-button {
-  display: flex;
-  position: absolute;
-  top: calc(50% - 30px);
+  /* top: calc(50% - 30px); */
   z-index: 10;
   cursor: pointer;
+  width: 100%;
   max-width: 30px;
 }
 

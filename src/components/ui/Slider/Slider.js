@@ -1,16 +1,19 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '../../../index.css';
 import { Navigation } from 'swiper/modules';
 import arrowLeft from '../../../icons/arrowLeft.svg';
 import arrowRight from '../../../icons/arrowRight.svg';
-import { cn } from '../../../lib/utils';
+import { HorizontalLayout } from '../HorizontalLayout/HorizontalLayout';
 
 export const Slider = ({ spaceBetween, slidesPerView, className, children }) => {
   return (
-    <>
+    <HorizontalLayout align="center" className={className}>
+      <div className="swiper-button image-swiper-button-prev mr-10 lg:ml-15">
+        <img src={arrowLeft} alt="arrowLeft" />
+      </div>
       <Swiper
-        className={cn('w-full h-full', className)}
         navigation={{
           nextEl: '.image-swiper-button-next',
           prevEl: '.image-swiper-button-prev',
@@ -18,17 +21,15 @@ export const Slider = ({ spaceBetween, slidesPerView, className, children }) => 
         }}
         modules={[Navigation]}
         spaceBetween={spaceBetween}
-        slidesPerView={slidesPerView}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}>
-        <SwiperSlide className="text-white">{children}</SwiperSlide>
-        <div className="swiper-button image-swiper-button-prev">
-          <img src={arrowLeft} />
-        </div>
-        <div className="swiper-button image-swiper-button-next right-0">
-          <img src={arrowRight} />
-        </div>
+        slidesPerView={slidesPerView}>
+        {React.Children.map(children, (child, index) => (
+          <SwiperSlide key={index}>{child ?? ''}</SwiperSlide>
+        ))}
       </Swiper>
-    </>
+
+      <div className="swiper-button image-swiper-button-next ml-10 lg:ml-15">
+        <img src={arrowRight} alt="arrowRight" />
+      </div>
+    </HorizontalLayout>
   );
 };
