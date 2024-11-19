@@ -78,6 +78,9 @@ module.exports = {
       inset: {
         large: 'calc(50% - 12px)'
       },
+      textUnderlineOffset: {
+        16: '16px'
+      },
       borderWidth: {
         3: '3px'
       },

@@ -18,7 +18,7 @@ export const Input = forwardRef(({ variant, className, label, ...props }, ref) =
         )}
         <input
           className={cn(
-            'text-base font-normal px-5 py-2 w-full text-dark placeholder-dark rounded-xxl bg-gray',
+            'text-base font-normal px-5 py-2 w-full text-dark placeholder-dark rounded-xxl bg-lightgray shadow-2xl',
             {
               'py-4': variant === 'lg',
               'text-xs': variant === 'sm'

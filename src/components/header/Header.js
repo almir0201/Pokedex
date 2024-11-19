@@ -53,7 +53,7 @@ export const Header = () => {
                   : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
               }`}>
               {routes.children.map((route, index = 1) => (
-                <Link key={index} to={route.path}>
+                <Link key={index} to={route.path} className="hover:underline underline-offset-16">
                   <Paragraph variant="xl" font="font-karla">
                     {route.title}
                   </Paragraph>
