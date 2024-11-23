@@ -2,7 +2,8 @@ import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 import logo from '../../images/logo.png';
 import { routes } from '../../index';
-import { Links } from '../ui/Links/Links';
+import { Paragraph } from '../ui/Paragraph/Paragraph';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -51,10 +52,12 @@ export const Header = () => {
                   ? 'absolute flex flex-col w-full left-0 pt-9 pb-11 top-[100%] gap-4 bg-gradient-to-b from-third to-primary md:relative md:pt-0 md:pb-4 md:flex-row md:gap-8 md:w-auto md:bg-none lg:gap-16'
                   : 'hidden md:flex pb-4 md:gap-8 lg:gap-16'
               }`}>
-              {routes.children.map((route, index) => (
-                <Links key={index} to={route.path} variant="xl" font="font-karla">
-                  {route.title}
-                </Links>
+              {routes.children.map((route, index = 1) => (
+                <Link key={index} to={route.path} className="hover:underline underline-offset-16">
+                  <Paragraph variant="xl" font="font-karla">
+                    {route.title}
+                  </Paragraph>
+                </Link>
               ))}
             </div>
           </div>

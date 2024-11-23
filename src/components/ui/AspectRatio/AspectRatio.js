@@ -12,7 +12,8 @@ export const AspectRatio = ({ children, variant, className }) => {
           'pb-[64.28%]': variant === '14/9',
           'pb-[75%]': variant === '4/3',
           'pb-[133.33%]': variant === '3/4',
-          'pb-[112.5%]': variant === '9/8'
+          'pb-[112.5%]': variant === '9/8',
+          'pb-[90%]': variant === '10/9'
         }
       )}>
       {children}
