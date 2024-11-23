@@ -26,3 +26,21 @@
     background: linear-gradient(270deg, #b33327 0.15%, #d93e30 100%);
   }
 }
+
+/* .swiper-wrapper {
+  margin-left: 60px;
+  margin-right: 60px;
+} */
+
+.swiper-button {
+  /* top: calc(50% - 30px); */
+  z-index: 10;
+  cursor: pointer;
+  width: 100%;
+  max-width: 30px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
