@@ -5,12 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import Documentation from './pages/Documentation';
 import Pokedex from './pages/Pokedex';
 import Legendaries from './pages/Legendaries';
+import ErrorPage from './pages/ErrorPage';
 import Root from './pages/Index';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { MainLayout } from './components/layout/MainLayout';
 
 const queryClient = new QueryClient();
+
+export const routesWithoutLayout = { path: '*', element: <ErrorPage />, title: '404' };
 
 export const routes = {
   element: <MainLayout />,
@@ -22,7 +25,7 @@ export const routes = {
   ]
 };
 
-const router = createBrowserRouter([routes]);
+const router = createBrowserRouter([routes, routesWithoutLayout]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <QueryClientProvider client={queryClient}>
